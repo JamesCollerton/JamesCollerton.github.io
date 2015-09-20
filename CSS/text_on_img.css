@@ -40,7 +40,6 @@ images when you hover your mouse on them. */
 .img_wrap_for_text:hover .img_title {
 
   background-color: white;
-  color: #000;
   visibility: visible;
   opacity: 1;
 
