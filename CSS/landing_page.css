@@ -16,7 +16,7 @@ body {
 
 br {
    display: block;
-   margin: -250px 0;
+   margin: 1% 0;
 }
 
 @media (max-width: 100000px) {
