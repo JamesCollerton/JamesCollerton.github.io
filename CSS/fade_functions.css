@@ -81,9 +81,13 @@ changes, this makes the hover animation look a lot smoother.*/
    -webkit-transition: opacity .25s ease-in-out;
 }
 
+#Education_BG:hover ~ #Education_IMG {
+    opacity: 0.1;
+}
+
 .fade_on_hover:hover 
 {
-    color: rgb(0,0,0,0.1);
+    /*color: rgb(0,0,0,0.1);*/
 }
 
 /*Used in the about page so that when you click things appear.*/

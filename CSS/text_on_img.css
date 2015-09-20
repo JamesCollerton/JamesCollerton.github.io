@@ -41,15 +41,6 @@ images when you hover your mouse on them. */
 }
 
 /* When you hover it shows up. */
-.img_title:hover {
-
-  /*color: white;*/
-  visibility: visible;
-  opacity: 1;
-
-}
-
-/* When you hover it shows up. */
 .img_wrap_for_text:hover .img_title {
 
   /*color: white;*/
