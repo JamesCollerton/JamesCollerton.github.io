@@ -47,8 +47,20 @@ body {
     position: fixed;
 }
 
-.education_title {
+.education_font {
 
   font-family: 'Lora', serif;
+
+}
+
+.landing_page_title {
+
+  font-size: 40px;
+
+}
+
+.landing_page_body {
+
+  font-size: 25px;
 
 }
