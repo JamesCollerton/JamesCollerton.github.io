@@ -25,7 +25,7 @@ setInterval(function () {
     if(project_hovering){ hover_on("project_img", "project_txt", 0.15, 1); }
     else{ hover_on("project_img", "project_txt", 1, 0); }
 
-    if(education_hovering){ hover_on_education("about_img", "about_txt", 0.15, 1); }
+    if(education_hovering){ hover_on("about_img", "about_txt", 0.15, 1); }
     else{ hover_on("about_img", "about_txt", 1, 0); }
 
 }, 100);
