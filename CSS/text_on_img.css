@@ -41,7 +41,7 @@ images when you hover your mouse on them. */
 /* When you hover it shows up. */
 .img_wrap_for_text:hover .img_title {
 
-  background-color: white;
+  color: white;
   visibility: visible;
   opacity: 1;
 
