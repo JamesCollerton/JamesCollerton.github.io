@@ -1,0 +1,93 @@
+/* Define the start and finish of the object for Chrome and Safari then Mozilla.
+using vendor specifix prefixes. */
+
+/* Fading in. */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+/* Fading out. */
+@-webkit-keyframes fade_out { from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes fade_out { from { opacity:1; } to { opacity:0; } }
+
+.fade-in 
+{
+
+ opacity:0;
+
+ /*Call the keyframe fadeIn, animates ease-in and repeats it once*/
+ -webkit-animation:fadeIn ease-in 1;
+ -moz-animation:fadeIn ease-in 1;
+ 
+ /*Makes sure we remain at the last keyframe after animation*/
+ -webkit-animation-fill-mode:forwards;
+ -moz-animation-fill-mode:forwards;
+ 
+ /*How long our animations take*/
+ -webkit-animation-duration:2s;
+ -moz-animation-duration:2s;
+}
+
+.fade-out 
+{
+
+  opacity:1;
+
+  /*Call the keyframe fadeIn, animates ease-in and repeats it once*/
+  -webkit-animation:fade_out ease-in 1;
+  -moz-animation:fade_out ease-in 1;
+
+  /*Makes sure we remain at the last keyframe after animation*/
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+
+  /*How long our animations take*/
+  -webkit-animation-duration:2s;
+  -moz-animation-duration:2s;
+
+}
+
+/* Delay after opening */
+/* These are designed so we have staged fading in. */
+
+/* Fades in first at 0.3s */
+.fade-in.one 
+{
+	-webkit-animation-delay: 0.3s;
+	-moz-animation-delay: 0.3s;
+
+}
+
+/* Fades in second at 1s */ 
+.fade-in.two 
+{
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+
+}
+
+/* Fades in third at 1.7s */
+.fade-in.three 
+{
+-webkit-animation-delay: 1.7s;
+-moz-animation-delay: 1.7s;
+
+}
+
+/*Designed so that when you hover it takes 0.25 seconds and the opacity
+changes, this makes the hover animation look a lot smoother.*/
+.fade_on_hover {
+   opacity: 1;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+.fade_on_hover:hover 
+{
+    opacity: 0.5;
+}
+
+/*Used in the about page so that when you click things appear.*/
+.invisible
+{
+  opacity: 0;
+}
