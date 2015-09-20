@@ -5,7 +5,7 @@ images when you hover your mouse on them. */
 .img_wrap_for_text 
 {
   position: relative;
-  margin:0 auto;
+  margin: 50% ;
   height: 100%;
   width: 100%;
 
