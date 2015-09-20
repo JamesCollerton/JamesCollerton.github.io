@@ -1,15 +1,8 @@
 
-function hover_on_education(){
+function hover_on_education(img_opacity, txt_opacity){
 
-	document.getElementById("education_img").style.opacity = 0.15;
-	document.getElementById("education_txt").style.opacity = 1;
-
-}
-
-function not_hover_on_education(){
-
-	document.getElementById("education_img").style.opacity = 1;
-	document.getElementById("education_txt").style.opacity = 0;
+	document.getElementById("education_img").style.opacity = img_opacity;
+	document.getElementById("education_txt").style.opacity = txt_opacity;
 
 }
 
@@ -24,7 +17,7 @@ setInterval(function () {
 
     education_hovering = isHover(document.getElementById('img_hover_wrap'));
 
-    if(education_hovering){ hover_on_education(); }
-    else{ not_hover_on_education(); }
+    if(education_hovering){ hover_on_education(0.15, 1); }
+    else{ hover_on_education(1, 0); }
 
 }, 100);
