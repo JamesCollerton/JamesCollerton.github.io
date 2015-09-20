@@ -1,0 +1,56 @@
+/* All of these functions are designed to overlay text on top of
+images when you hover your mouse on them. */
+
+/* Wraps up both the image and the text. */
+.img_wrap_for_text 
+{
+  position: relative;
+  margin:0 auto;
+  height: 100%;
+  width: 100%;
+
+  line-height: 200px;
+}
+
+/* Wrap for slightly larger images. */
+.img_wrap_for_text_photo_gallery 
+{
+  position: relative;
+  height: 310px;
+  width: 300px;
+  line-height: 300px;
+}
+
+/* Inside of the wrapper positions the title absolutely center. */
+.img_title {
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.5);
+  color: #000;
+  font-size: 30px;
+
+  visibility: hidden;
+  opacity: 0;
+
+  /* These are so the image title transitions in slowly and isn't too
+  sudden. */
+ -moz-transition: opacity .25s ease-in-out;
+ -webkit-transition: opacity .25s ease-in-out;
+
+}
+
+.img_wrap_for_text:hover .img_title {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img_wrap_for_text_photo_gallery:hover .img_title {
+  visibility: visible;
+  opacity: 1;
+}

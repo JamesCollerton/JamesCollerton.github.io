@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="CSS/normalize.css"/>
 	<link rel="stylesheet" href="CSS/bootstrap.css"/>
 	<link rel="stylesheet" href="CSS/landing_page.css"/>
+	<link rel="stylesheet" href="CSS/text_on_img.css"/>
 	<!-- Note the first one is to normalize the css across browsers. -->
 
 	<!-- Google font API for fonts. -->
@@ -57,9 +58,25 @@
 			<!-- All columns are of width 4 so they are equal. -->
 			<div class = "col-md-4">
 
-				<img src="Images/Landing_Page/books.jpg"
-					 class="third" 
-					 alt="Books"/>
+				<div class = "img_wrap_for_text">
+
+					<img src="Images/Landing_Page/books.jpg"
+						 class="third" 
+						 alt="Books"/>
+
+				</div>
+
+				<!-- Images and text are wrapped together to allow
+					for the text highlighting when you hover over them. -->
+<!-- 				<div class = "img_wrap_for_text">
+
+					<img src="images/index_page/art_img.png" 
+					     class="img-responsive center_image fade_on_hover" 
+					     alt="art_img"/>
+
+					<p class = "img_title">Art</p>
+
+				</div> -->
 
 			</div>
 
