@@ -12,8 +12,25 @@ body {
      overflow-y: hidden;
 }
 
+@media (max-width: 10000px) {
+    .container {
+      padding:0;
+      margin:0;
+    }
+
+    body {
+      padding:0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+}
+
 .third {
 	height:100%;
-    width:33.33%;
+    width:33%;
     position: fixed;
 }
