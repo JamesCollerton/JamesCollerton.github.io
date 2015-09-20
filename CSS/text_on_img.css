@@ -18,7 +18,7 @@ images when you hover your mouse on them. */
 .img_title {
 
   position: absolute;
-  top: 20%;
+  margin-top: 40%;
   bottom: 0;
   left: 0;
   right: 0;
