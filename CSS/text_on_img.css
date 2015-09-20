@@ -46,6 +46,8 @@ images when you hover your mouse on them. */
 }
 
 .img_wrap_for_text:hover .img_title {
+  background: rgba(255, 255, 255, 0.5);
+  color: #000;
   visibility: visible;
   opacity: 1;
 }
