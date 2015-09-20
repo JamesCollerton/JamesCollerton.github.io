@@ -11,7 +11,7 @@ images when you hover your mouse on them. */
   height: 100%;
   width: 100%;
 
-  line-height: 2500%;
+  /*line-height: 2500%;*/
 }
 
 /* Inside of the wrapper positions the title absolutely center. */
