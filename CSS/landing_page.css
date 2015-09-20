@@ -54,19 +54,21 @@ br {
 
 .education_font {
 
-  padding-top: 10%;
+  padding-top: 30%;
   font-family: 'Lora', serif;
 
 }
 
 .project_font {
 
+  padding-top: 30%;
   font-family: 'Dosis', sans-serif;
 
 }
 
 .about_me_font {
 
+  padding-top: 30%;
   font-family: 'Lobster', cursive;
 
 }
