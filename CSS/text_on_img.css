@@ -31,6 +31,8 @@ images when you hover your mouse on them. */
   visibility: hidden;
   opacity: 0;
 
+  line-height: 100%;
+
   /* These are so the image title transitions in slowly and isn't too
   sudden. */
  -moz-transition: opacity .5s ease-in-out;
