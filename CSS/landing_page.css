@@ -24,6 +24,7 @@ body {
       z-index: 0;
       padding:0;
       margin:0;
+      background-color: black;
     }
 
     body {
@@ -34,6 +35,7 @@ body {
     	top: 0px; 
     	z-index: 0;
       	padding:0;
+      	background-color: black;
     }
 
 }
