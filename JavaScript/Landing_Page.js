@@ -1,4 +1,8 @@
+// JavaScript to control the hovering on the landing page.
 
+// When you hover on different parts of the page changes the opacity.
+
+// When you hover on a part of the page, swaps the opacity.
 function hover_on(img_id, txt_id, img_opacity, txt_opacity){
 
 	document.getElementById(img_id).style.opacity = img_opacity;
@@ -6,6 +10,7 @@ function hover_on(img_id, txt_id, img_opacity, txt_opacity){
 
 }
 
+// Checks if something is being hovered on.
 function isHover(e) {
 
 	is_hovering = ( e.parentElement.querySelector(':hover') === e )
@@ -13,6 +18,9 @@ function isHover(e) {
     return (is_hovering);
 
 }
+
+// Every 100ms checks if each of the elements is being hovered on, if so changes
+// them to the relevant opacity.
 setInterval(function () {
 
     education_hovering = isHover(document.getElementById('img_hover_wrap_education'));

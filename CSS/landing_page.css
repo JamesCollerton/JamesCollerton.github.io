@@ -1,4 +1,4 @@
-/* CSS for the landing page */
+/* CSS for the Landing Page */
 
 /* Sorts out the background */
 #background {
@@ -10,15 +10,12 @@
     background-color: black;
 }
 
+/* Stops the scrolling */
 body {
      overflow-y: hidden;
 }
 
-br {
-   display: block;
-   margin: -30% 0;
-}
-
+/* For all media removes the padding around the container */
 @media (max-width: 100000px) {
 
     .container {
@@ -46,12 +43,14 @@ br {
 
 }
 
+/* Gets images to be a third of the screen */
 .third {
 	height:100%;
     width:33%;
     position: fixed;
 }
 
+/* Font for all the titles and stuff */
 .landing_page_font {
 
   padding-top: 45%;
@@ -59,6 +58,7 @@ br {
 
 }
 
+/* Different sizes for the title and the body */
 .landing_page_title {
 
   font-size: 40px;
