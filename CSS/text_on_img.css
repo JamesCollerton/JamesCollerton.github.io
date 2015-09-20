@@ -36,12 +36,12 @@ images when you hover your mouse on them. */
 
 }
 
+/* When you hover it shows up. */
 .img_wrap_for_text:hover .img_title {
-  visibility: visible;
-  opacity: 1;
-}
 
-.img_wrap_for_text_photo_gallery:hover .img_title {
+  background: rgba(255, 255, 255, 1);
+  color: #000;
   visibility: visible;
   opacity: 1;
+
 }
