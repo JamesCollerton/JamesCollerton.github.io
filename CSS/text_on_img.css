@@ -4,6 +4,8 @@ images when you hover your mouse on them. */
 /* Wraps up both the image and the text. */
 .img_wrap_for_text 
 {
+  background: white;
+
   position: relative;
   margin:0 auto;
   height: 100%;
