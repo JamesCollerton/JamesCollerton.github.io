@@ -52,23 +52,9 @@ br {
     position: fixed;
 }
 
-.education_font {
-
-  padding-top: 30%;
-  font-family: 'Lora', serif;
-
-}
-
-.project_font {
-
-  padding-top: 30%;
-  font-family: 'Dosis', sans-serif;
-
-}
-
 .landing_page_font {
 
-  padding-top: 30%;
+  padding-top: 45%;
   font-family: 'Lobster', cursive;
 
 }
