@@ -53,6 +53,18 @@ body {
 
 }
 
+.project_font {
+
+  font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+.about_me_font {
+
+  font-family: 'Lobster', cursive;
+
+}
+
 .landing_page_title {
 
   font-size: 40px;
