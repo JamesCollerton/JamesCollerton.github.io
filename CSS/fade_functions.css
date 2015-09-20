@@ -79,11 +79,11 @@ changes, this makes the hover animation look a lot smoother.*/
    opacity: 1;
    -moz-transition: opacity .25s ease-in-out;
    -webkit-transition: opacity .25s ease-in-out;
-   }
+}
 
 .fade_on_hover:hover 
 {
-    opacity: 0.1;
+    color: rgb(0,0,0,0.1);
 }
 
 /*Used in the about page so that when you click things appear.*/
