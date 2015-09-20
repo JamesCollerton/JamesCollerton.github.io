@@ -5,20 +5,11 @@ images when you hover your mouse on them. */
 .img_wrap_for_text 
 {
   position: relative;
-  margin: 50% ;
+  margin:0 auto;
   height: 100%;
   width: 100%;
 
   line-height: 200px;
-}
-
-/* Wrap for slightly larger images. */
-.img_wrap_for_text_photo_gallery 
-{
-  position: relative;
-  height: 310px;
-  width: 300px;
-  line-height: 300px;
 }
 
 /* Inside of the wrapper positions the title absolutely center. */
@@ -32,6 +23,7 @@ images when you hover your mouse on them. */
   text-align: center;
 
   background-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
   color: #000;
   font-size: 30px;
 
@@ -47,6 +39,7 @@ images when you hover your mouse on them. */
 
 .img_wrap_for_text:hover .img_title {
   background: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   color: #000;
   visibility: visible;
   opacity: 1;
