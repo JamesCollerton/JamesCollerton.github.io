@@ -12,3 +12,5 @@
     width:100%;
     height:100%;
 }
+
+.third_two { min-width:100%; min-height:100%; width:auto; height:auto; }
