@@ -1,7 +1,7 @@
 
 body {
 
-	background-image: url(Images/Index_Page/web_front_page.jpg);
+	background-image: url(../Images/Index_Page/web_front_page.jpg);
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 	background-size: cover;
