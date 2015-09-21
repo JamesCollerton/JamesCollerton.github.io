@@ -8,5 +8,16 @@ body {
 	background-position: bottom !important;
 	background-repeat: no-repeat !important;
 	background-attachment: fixed;
+	font-family: 'Ubuntu', sans-serif;
 
+}
+
+.main_head_font
+{
+	font-size: 50px;
+}
+
+.sub_head_font
+{
+	font-size: 25px;
 }
