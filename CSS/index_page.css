@@ -27,6 +27,11 @@ body {
 	font-size: 15px;
 }
 
+.enter_font:hover
+{
+	opacity:0.5
+}
+
 a {
 	color: black;
     text-decoration: none;
