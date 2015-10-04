@@ -79,5 +79,6 @@ a {
 a:hover 
 {
   color: #6699FF;
+  opacity: 0.6;
   text-decoration: none;   
 }
