@@ -6,8 +6,20 @@
 // These are all of the page names for the different pages. Later they
 // are update synchronised with the database, but when we first load up
 // the database we want to display some default ones.
-var page_names = ['About', 'Home', 'User Stats', 
-                   'Art', 'Photography', 'Models']
+var page_names = ['About', 'Home', 'User Stats','Art', 'Photography', 'Models']
+
+var msc_units = ['Java', 'Comp Arch', 'C', 'Web Tech', 'Research', 'Databases', 'Group Project']
+var msc_results = [86, 74, 82, 75, 77, 90, 72]
+
+var bsc_units = ['Analysis 1', 'Num Theory', 'Prob 1', 'Stats 1', 'LAG 1', 'Calc 1', 'Mech 1',
+                 'Analysis 2', 'Comp Math', 'Prob 2', 'Stats 2', 'Calc 2', 'Optimisation',
+                 'Chinese', 'ODE 2', 'Bayesian A', 'Bayesian B', 'Economics', 'Financial',
+                 'Project', 'Inference', 'Time Series']
+var bsc_results = [73, 76, 66, 81, 74, 77, 82, 83, 82, 83, 82, 79, 94, 76, 91, 75,
+                   59, 72, 80, 78, 70, 71]
+
+var a_level_units = ['Maths', 'Further Maths', 'Chemistry']
+var a_level_results = [100, 100, 100]
 
 // This is updated with data each time we make a request.
 var data = [1, 2, 3, 4, 5, 6];
