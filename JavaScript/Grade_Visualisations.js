@@ -285,12 +285,13 @@ function make_d3(){
   // are too long we only print the first word. The only exception is
   // user statistics as 'User' makes no sense, so we change this to stats.
   function get_page_name(){
-    page_title = curr_page % 7;
-    ++curr_page;
-    var page_name = String(page_names[page_title]);
-    var split = page_name.split(" ")[0];
-    if(split == "User"){ split = "Stats"; }
-    return(split);
+    // page_title = curr_page % 7;
+    // ++curr_page;
+    // var page_name = String(page_names[page_title]);
+    // var split = page_name.split(" ")[0];
+    // if(split == "User"){ split = "Stats"; }
+    // return(split);
+    return('Misc');
   }
 
   // This randomly picks a unique colour from the colour scheme not used
