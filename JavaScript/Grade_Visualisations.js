@@ -143,7 +143,9 @@ function make_d3(){
 
   // The default dataset to be loaded in. This displays the format of the
   // graph.
-  var dataset = data;
+  // var dataset = data;
+
+  var dataset = msc_results;
 
   // Scales the x axis.
   var xScale = d3.scale.ordinal()
