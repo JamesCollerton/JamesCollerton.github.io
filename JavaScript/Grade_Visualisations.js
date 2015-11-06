@@ -296,11 +296,13 @@ function make_d3(){
   // This randomly picks a unique colour from the colour scheme not used
   // before on the same graph.
   function pick_colour(){
-    do{
-      colour = Math.floor(Math.random() * 6);
-    }while(used_colours.indexOf(colour) > -1);
-    used_colours.push(colour);
-    return colours[colour];
+    // do{
+    //   colour = Math.floor(Math.random() * 6);
+    // }while(used_colours.indexOf(colour) > -1);
+    // used_colours.push(colour);
+    // return colours[colour];
+
+    return('rgb(51,102,255)');
   }
 
 }  
