@@ -291,6 +291,7 @@ function make_d3(){
     // var split = page_name.split(" ")[0];
     // if(split == "User"){ split = "Stats"; }
     // return(split);
+
     return('Misc');
   }
 
@@ -303,7 +304,8 @@ function make_d3(){
     // used_colours.push(colour);
     // return colours[colour];
 
-    return('rgb(51,102,255)');
+    colour = Math.floor(Math.random() * 6)
+    return colours[colour];
   }
 
 }  
