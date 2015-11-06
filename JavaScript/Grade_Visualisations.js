@@ -198,22 +198,22 @@ function make_d3(){
      });
 
   //Creates text labels for each of the bars.
-  svg.selectAll("text")
-     .data(dataset)
-     .enter()
-     .append("text")
-     .text(function(d) {
-        return get_page_name();
-     })
-     .attr("text-anchor", "middle")
-     .attr("x", function(d, i) {
-        return xScale(i) + xScale.rangeBand() / 2;
-     })
-     .attr("y", function(d) {
-        return h - yScale(d) + 14;
-     })
-     .attr("font-size", "14px")
-     .attr("fill", "white");
+  // svg.selectAll("text")
+  //    .data(dataset)
+  //    .enter()
+  //    .append("text")
+  //    .text(function(d) {
+  //       return get_page_name();
+  //    })
+  //    .attr("text-anchor", "middle")
+  //    .attr("x", function(d, i) {
+  //       return xScale(i) + xScale.rangeBand() / 2;
+  //    })
+  //    .attr("y", function(d) {
+  //       return h - yScale(d) + 14;
+  //    })
+  //    .attr("font-size", "14px")
+  //    .attr("fill", "white");
 
   // Finally we add on the y axis to the graph.
   svg.append("g")
