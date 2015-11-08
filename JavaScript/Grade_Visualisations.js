@@ -193,6 +193,8 @@ function make_d3(){
   d3.select("#tab_update")
     .on("click", function() {
 
+      console.log('Hello')
+
       // When we click we update the dataset to the new data,
       // say we have no new colours and the current page is the
       // first one in the list.
