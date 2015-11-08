@@ -296,8 +296,9 @@ function make_d3(){
     // return(split);
 
     page_names = msc_units;
+    page_to_display = curr_page
     curr_page = (curr_page + 1) % page_names.length;
-    return(page_names[curr_page]);
+    return(page_names[page_to_display]);
 
     // return('Misc');
   }
