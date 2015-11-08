@@ -211,27 +211,45 @@ function make_d3(){
       yScale.domain([0, d3.max(dataset)]);
 
       //Update all rects
+      // svg.selectAll("rect")
+      //    .data(dataset)
+      //    // .transition()
+      //    .enter()
+      //    .delay(function(d, i) {
+      //      return i / dataset.length * 1000;
+      //    })
+      //    .duration(500)
+      //    .attr("x", function(d, i) {
+      //       return xScale(i);
+      //     })
+      //    .attr("width", xScale.rangeBand())
+      //    .attr("y", function(d) {
+      //       return h - yScale(d);
+      //    })
+      //    .attr("height", function(d) {
+      //       return yScale(d);
+      //    })
+      //    .attr("fill", function(d) {
+      //     return pick_colour();
+      //    });
+
       svg.selectAll("rect")
-         .data(dataset)
-         // .transition()
-         .enter()
-         .delay(function(d, i) {
-           return i / dataset.length * 1000;
-         })
-         .duration(500)
-         .attr("x", function(d, i) {
-            return xScale(i);
-          })
-         .attr("width", xScale.rangeBand())
-         .attr("y", function(d) {
-            return h - yScale(d);
-         })
-         .attr("height", function(d) {
-            return yScale(d);
-         })
-         .attr("fill", function(d) {
-          return pick_colour();
-         });
+       .data(dataset)
+       .enter()
+       .append("rect")
+       .attr("x", function(d, i) {
+          return xScale(i);
+       })
+       .attr("y", function(d) {
+          return h - yScale(d);
+       })
+       .attr("width", xScale.rangeBand())
+       .attr("height", function(d) {
+          return yScale(d);
+       })
+       .attr("fill", function(d) {
+        return pick_colour();
+       });
 
       //Update all labels
       svg.selectAll("text")
