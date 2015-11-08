@@ -202,6 +202,9 @@ function make_d3(){
       used_colours = [];
       curr_page = 0;
 
+      // Rescaling x domain.
+      xScale.domain(d3.range(dataset.length));
+
       // We rescale the display domain and the axis domain.
       yScale_rev.domain([0, d3.max(dataset)]);
       yScale.domain([0, d3.max(dataset)]);
