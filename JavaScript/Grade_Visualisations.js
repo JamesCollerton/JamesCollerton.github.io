@@ -8,7 +8,7 @@
 // the database we want to display some default ones.
 var page_names = ['About', 'Home', 'User Stats','Art', 'Photography', 'Models']
 
-var msc_units = ['Java', 'Comp Arch', 'C', 'Web Tech', 'Research', 'Databases', 'Group Project']
+var msc_units = ['Java', 'Comp Arch', 'C', 'Web Tech', 'Research', 'Databases', 'Group']
 var msc_results = [86, 74, 82, 75, 77, 90, 72]
 
 var bsc_units = ['Analysis 1', 'Num Theory', 'Prob 1', 'Stats 1', 'LAG 1', 'Calc 1', 'Mech 1',
@@ -49,7 +49,8 @@ var pages = {
 // for the graph so that it looks good. I originally wrote a random colour
 // functions, but most of the time it generated rubbish colours.
 var colours = [ 'rgb(51,102,255)', 'rgb(204,51,255)', 'rgb(255,51,204)',
-                'rgb(102,255,51)', 'rgb(245,184,0)', 'rgb(204,102,255)'];
+                'rgb(102,255,51)', 'rgb(245,184,0)', 'rgb(204,102,255)',
+                ];
 var used_colours =[];
 
 // For all of the buttons in the user stats panel assign a listener.
@@ -310,8 +311,9 @@ function make_d3(){
     // used_colours.push(colour);
     // return colours[colour];
 
-    colour = Math.floor(Math.random() * 6)
-    return colours[colour];
+    // colour = Math.floor(Math.random() * 6)
+    // return colours[colour];
+    return('rgb(0,137,255)')
   }
 
 }  
