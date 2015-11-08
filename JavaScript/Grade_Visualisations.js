@@ -10,10 +10,9 @@
 var msc_units = ['Java', 'Arch', 'C', 'Web Tech', 'Research', 'DB', 'Group']
 var msc_results = [86, 74, 82, 75, 77, 90, 72]
 
-var bsc_units = ['Analysis 1', 'Num Theory', 'Prob 1', 'Stats 1', 'LAG 1', 'Calc 1', 'Mech 1',
-                 'Analysis 2', 'Comp Math', 'Prob 2', 'Stats 2', 'Calc 2', 'Optimisation',
-                 'Chinese', 'ODE 2', 'Bayesian A', 'Bayesian B', 'Economics', 'Financial',
-                 'Project', 'Inference', 'Time Series']
+var bsc_units = ['A1', 'NT', 'P1', 'S1', 'L1', 'C1', 'M1',
+                 'A2', 'CM', 'P2', 'S2', 'C2', 'O2', 'MC', 
+                 'DE2', 'BA', 'BB', 'PE', 'FM', 'WP', 'TI', 'TS']
 var bsc_results = [73, 76, 66, 81, 74, 77, 82, 83, 82, 83, 82, 79, 94, 76, 91, 75,
                    59, 72, 80, 78, 70, 71]
 
