@@ -7,7 +7,7 @@
 // are update synchronised with the database, but when we first load up
 // the database we want to display some default ones.
 
-var msc_units = ['Java', 'Comp Arch', 'C', 'Web Tech', 'Research', 'Databases', 'Group']
+var msc_units = ['Java', 'Arch', 'C', 'Web Tech', 'Research', 'DB', 'Group']
 var msc_results = [86, 74, 82, 75, 77, 90, 72]
 
 var bsc_units = ['Analysis 1', 'Num Theory', 'Prob 1', 'Stats 1', 'LAG 1', 'Calc 1', 'Mech 1',
