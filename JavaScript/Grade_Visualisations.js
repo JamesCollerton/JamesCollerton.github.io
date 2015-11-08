@@ -106,7 +106,7 @@ function make_d3(){
   var curr_page = 0;
 
   //Width and height of the graph.
-  var w = 400;
+  var w = 500;
   var h = 400;
 
   // The default dataset to be loaded in. This displays the format of the
