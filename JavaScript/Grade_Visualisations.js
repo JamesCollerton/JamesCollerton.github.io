@@ -238,13 +238,13 @@ function make_d3(){
 
       bars.enter().append("svg:g")
           .attr("class", "bar")
-          .append("svg:rect");
+          .append("rect");
 
       bars.transition().duration(500)
           .attr("transform", function(d, i) { 
                return "translate(" + h_padding + "," + yScale(i) + ")"; 
            })
-          .selectAll("svg:rect")
+          .selectAll("rect")
            .attr("width", xScale.rangeBand())
            .attr("y", function(d) {
               return h - yScale(d);
@@ -257,7 +257,7 @@ function make_d3(){
            });
 
       bars.exit().transition().duration(500)
-          .selectAll("svg:rect")
+          .selectAll("rect")
           .attr("height", 0)
           .remove();
 
