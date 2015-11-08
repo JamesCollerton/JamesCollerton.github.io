@@ -235,6 +235,10 @@ function make_d3(){
 
       svg.selectAll("rect")
        .data(dataset)
+       .remove()
+
+      svg.selectAll("rect")
+       .data(dataset)
        .enter()
        .append("rect")
        .attr("x", function(d, i) {
