@@ -34,36 +34,35 @@ var tab_buttons = {
 // for the graph so that it looks good. I originally wrote a random colour
 // functions, but most of the time it generated rubbish colours.
 var colours = [ 'rgb(51,102,255)', 'rgb(204,51,255)', 'rgb(255,51,204)',
-                'rgb(102,255,51)', 'rgb(245,184,0)', 'rgb(204,102,255)',
-                ];
+                'rgb(102,255,51)', 'rgb(245,184,0)', 'rgb(204,102,255)'];
 var used_colours =[];
 
 // For all of the buttons in the user stats panel assign a listener.
-// function assign_button_listener(){
+function assign_button_listener(){
 
-//   for(button in radio_buttons){ 
-//     radio_buttons[button].addEventListener('click', run_checks); 
-//   }
+  for(button in tab_buttons){ 
+    tab_buttons[button].addEventListener('click', run_checks); 
+  }
 
-// }
+}
 
 // Every time they are clicked we want to see what is checked in order 
 // to update the data.
-// function run_checks(){
+function run_checks(){
 
-//   if(radio_buttons['time_radio'].checked){ 
-//     button_check('time_radio', 'Time'); 
-//   }
-//   else if(radio_buttons['clicks_radio'].checked){ 
-//     button_check('clicks_radio', 'Num_Clicks'); 
-//   }
-//   else if(radio_buttons['hits_radio'].checked){
-//     button_check('hits_radio', 'Hits');
-//   }
-//   else if(radio_buttons['contacts_radio'].checked){
-//     button_check('contacts_radio', 'Contacts');
-//   }
-// }
+  if(radio_buttons['time_radio'].checked){ 
+    button_check('time_radio', 'Time'); 
+  }
+  else if(radio_buttons['clicks_radio'].checked){ 
+    button_check('clicks_radio', 'Num_Clicks'); 
+  }
+  else if(radio_buttons['hits_radio'].checked){
+    button_check('hits_radio', 'Hits');
+  }
+  else if(radio_buttons['contacts_radio'].checked){
+    button_check('contacts_radio', 'Contacts');
+  }
+}
 
 // Empty the data and the page names columns to add new data and get the
 // page names in order. Then make a request for the given type.
