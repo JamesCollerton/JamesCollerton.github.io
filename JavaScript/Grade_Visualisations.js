@@ -238,7 +238,7 @@ function make_d3(){
 
       bars.enter().append("svg:g")
           .attr("class", "bar")
-          .append("svg:rect").
+          .append("svg:rect");
 
       bars.transition().duration(500)
           .attr("transform", function(d, i) { 
