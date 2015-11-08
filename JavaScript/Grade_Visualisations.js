@@ -113,7 +113,8 @@ function make_d3(){
   // graph.
   // var dataset = data;
 
-  var dataset = msc_results;
+  // var dataset = msc_results;
+  var dataset = bsc_results;
 
   // Scales the x axis.
   var xScale = d3.scale.ordinal()
@@ -262,7 +263,8 @@ function make_d3(){
     // if(split == "User"){ split = "Stats"; }
     // return(split);
 
-    page_names = msc_units;
+    page_names = bsc_units;
+    // page_names = msc_units;
     page_to_display = curr_page
     curr_page = (curr_page + 1) % page_names.length;
     return(page_names[page_to_display]);
