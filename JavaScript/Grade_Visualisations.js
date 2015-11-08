@@ -21,6 +21,7 @@ var a_level_results = [100, 100, 100]
 
 // Left over, might be useful later.
 var first_pass = true;
+var curr_page = 0
 
 // List of all of the radio buttons from the page used for registering
 // clicks.
@@ -50,47 +51,44 @@ function assign_button_listener(){
 // to update the data.
 function run_checks(){
 
-  if(radio_buttons['time_radio'].checked){ 
-    button_check('time_radio', 'Time'); 
+  if(radio_buttons['comp_sci_tab'].checked){ 
+    button_check('comp_sci_tab'); 
   }
-  else if(radio_buttons['clicks_radio'].checked){ 
-    button_check('clicks_radio', 'Num_Clicks'); 
+  else if(radio_buttons['math_tab'].checked){ 
+    button_check('math_tab'); 
   }
-  else if(radio_buttons['hits_radio'].checked){
-    button_check('hits_radio', 'Hits');
-  }
-  else if(radio_buttons['contacts_radio'].checked){
-    button_check('contacts_radio', 'Contacts');
+  else if(radio_buttons['a_level_tab'].checked){
+    button_check('a_level_tab');
   }
 }
 
 // Empty the data and the page names columns to add new data and get the
 // page names in order. Then make a request for the given type.
-// function button_check(button, type){
+function button_check(button){
 
-//   data = [];
-//   page_names = [];
+  curr_page = 0;
 
-//   if(radio_buttons[button].checked){ stat_request(type); }
+  if(button == 'comp_sci_tab'){
+    data = msc_results;
+    page_names = msc_units;
+  }
+  else if(button == 'math_tab'){
+    data = bsc_results;
+    page_names = bsc_units;
+  }
+  else if(button == 'a_level_tab'){
+    data = a_level_results;
+    page_names = a_level_units;
+  }
 
-// }
+  make_d3();
 
-// Once we have the data back from the database we add it and the name of the
-// page it is from to the data and page name arrays to be referenced later.
-// function update_data_array(data_point, req_type) {
+}
 
-//   for(i = 0; i < data_point.length; ++i){
-//     data.push(data_point[i][req_type]);
-//     page_names.push(data_point[i]['Page']);
-//   }
-
-//   if(first_pass){ first_pass = false; make_d3();}
-// }
-
-// assign_button_listener();
+assign_button_listener();
 
 ////////////////////////////////////////////////////////////////////////////////
-make_d3()
+// make_d3()
 
 function make_d3(){
 
@@ -108,10 +106,10 @@ function make_d3(){
 
   // The default dataset to be loaded in. This displays the format of the
   // graph.
-  // var dataset = data;
+  var dataset = data;
 
   // var dataset = msc_results;
-  var dataset = bsc_results;
+  // var dataset = bsc_results;
 
   // Scales the x axis.
   var xScale = d3.scale.ordinal()
@@ -246,8 +244,6 @@ function make_d3(){
                 
     });
 
-  curr_page = 0
-
   // This is used to get the names of the pages to put onto the graph.
   // We work up the numbers 0-6 where the names are stored and if they
   // are too long we only print the first word. The only exception is
@@ -260,7 +256,7 @@ function make_d3(){
     // if(split == "User"){ split = "Stats"; }
     // return(split);
 
-    page_names = bsc_units;
+    // page_names = bsc_units;
     // page_names = msc_units;
     page_to_display = curr_page
     curr_page = (curr_page + 1) % page_names.length;
@@ -274,6 +270,7 @@ function make_d3(){
   function pick_colour(){
 
       return('rgb(0,137,255)')
+
   }
 
 }  
