@@ -292,7 +292,10 @@ function make_d3(){
     // if(split == "User"){ split = "Stats"; }
     // return(split);
 
-    return('Misc');
+    page_names = msc_units;
+    return(page_names[0]);
+
+    // return('Misc');
   }
 
   // This randomly picks a unique colour from the colour scheme not used
