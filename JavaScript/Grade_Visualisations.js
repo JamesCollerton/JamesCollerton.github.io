@@ -203,7 +203,8 @@ function make_d3(){
       curr_page = 0;
 
       // Rescaling x domain.
-      xScale.domain(d3.range(dataset.length));
+      xScale.domain(d3.range(dataset.length))
+            .rangeRoundBands([padding, w - padding], 0.05);;
 
       // We rescale the display domain and the axis domain.
       yScale_rev.domain([0, d3.max(dataset)]);
