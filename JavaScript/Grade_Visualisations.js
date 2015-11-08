@@ -233,27 +233,55 @@ function make_d3(){
       //     return pick_colour();
       //    });
 
-      svg.selectAll("rect")
-       .data(dataset)
-       .remove()
+      bars = vis.selectAll("rect")
+                .data(data);
 
-      svg.selectAll("rect")
-       .data(dataset)
-       .enter()
-       .append("rect")
-       .attr("x", function(d, i) {
-          return xScale(i);
-       })
-       .attr("y", function(d) {
-          return h - yScale(d);
-       })
-       .attr("width", xScale.rangeBand())
-       .attr("height", function(d) {
-          return yScale(d);
-       })
-       .attr("fill", function(d) {
-        return pick_colour();
-       });
+      bars.enter().append("svg:g")
+          .attr("class", "bar")
+          .append("svg:rect").
+
+      bars.transition().duration(500)
+          .attr("transform", function(d, i) { 
+               return "translate(" + labelpad + "," + yScale(i) + ")"; 
+           })
+          .selectAll("svg:rect")
+           .attr("width", xScale.rangeBand())
+           .attr("y", function(d) {
+              return h - yScale(d);
+           })
+           .attr("height", function(d) {
+              return yScale(d);
+           })
+           .attr("fill", function(d) {
+            return pick_colour();
+           });
+
+      bars.exit().transition().duration(500)
+          .selectAll("svg:rect")
+          .attr("height", 0)
+          .remove();
+
+      // svg.selectAll("rect")
+      //  .data(dataset)
+      //  .remove()
+
+      // svg.selectAll("rect")
+      //  .data(dataset)
+      //  .enter()
+      //  .append("rect")
+      //  .attr("x", function(d, i) {
+      //     return xScale(i);
+      //  })
+      //  .attr("y", function(d) {
+      //     return h - yScale(d);
+      //  })
+      //  .attr("width", xScale.rangeBand())
+      //  .attr("height", function(d) {
+      //     return yScale(d);
+      //  })
+      //  .attr("fill", function(d) {
+      //   return pick_colour();
+      //  });
 
       //Update all labels
       svg.selectAll("text")
