@@ -233,8 +233,8 @@ function make_d3(){
       //     return pick_colour();
       //    });
 
-      bars = vis.selectAll("rect")
-                .data(data);
+      bars = svg.selectAll("rect")
+                 .data(data);
 
       bars.enter().append("svg:g")
           .attr("class", "bar")
