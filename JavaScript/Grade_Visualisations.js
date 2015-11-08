@@ -204,7 +204,7 @@ function make_d3(){
 
       // Rescaling x domain.
       xScale.domain(d3.range(dataset.length))
-            .rangeRoundBands([padding, w - padding], 0.05);;
+            .rangeRoundBands([padding, w - padding], 0.05);
 
       // We rescale the display domain and the axis domain.
       yScale_rev.domain([0, d3.max(dataset)]);
@@ -219,8 +219,9 @@ function make_d3(){
          })
          .duration(500)
          .attr("x", function(d, i) {
-            return xScale(i) + xScale.rangeBand() / 2;
+            return xScale(i);
           })
+         .attr("width", xScale.rangeBand())
          .attr("y", function(d) {
             return h - yScale(d);
          })
