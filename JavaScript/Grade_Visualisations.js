@@ -51,6 +51,8 @@ function assign_button_listener(){
 // to update the data.
 function run_checks(){
 
+  print(radio_buttons['comp_sci_tab'].attr('class'))
+
   if(radio_buttons['comp_sci_tab'].checked){ 
     button_check('comp_sci_tab'); 
   }
