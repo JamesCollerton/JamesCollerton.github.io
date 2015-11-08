@@ -6,7 +6,6 @@
 // These are all of the page names for the different pages. Later they
 // are update synchronised with the database, but when we first load up
 // the database we want to display some default ones.
-var page_names = ['About', 'Home', 'User Stats','Art', 'Photography', 'Models']
 
 var msc_units = ['Java', 'Comp Arch', 'C', 'Web Tech', 'Research', 'Databases', 'Group']
 var msc_results = [86, 74, 82, 75, 77, 90, 72]
@@ -21,9 +20,7 @@ var bsc_results = [73, 76, 66, 81, 74, 77, 82, 83, 82, 83, 82, 79, 94, 76, 91, 7
 var a_level_units = ['Maths', 'Further Maths', 'Chemistry']
 var a_level_results = [100, 100, 100]
 
-// This is updated with data each time we make a request.
-var data = [1, 2, 3, 4, 5, 6];
-
+// Left over, might be useful later.
 var first_pass = true;
 
 // List of all of the radio buttons from the page used for registering
@@ -34,16 +31,6 @@ var first_pass = true;
 //   hits_radio: document.getElementById("hits"),
 //   contacts_radio: document.getElementById("contacts"),
 // };
-
-// List of all of the possible page titles.
-var pages = {
-  home: 'Home.',
-  art: 'Art Gallery.',
-  photography: 'Photography Gallery.',
-  models: 'Models.',
-  about: 'About.',
-  user_stats: 'User Statistics.',
-}
 
 // A selection of nice looking colours that can be randomly chosen from
 // for the graph so that it looks good. I originally wrote a random colour
@@ -91,26 +78,6 @@ var used_colours =[];
 
 // }
 
-// This is the stat request. We use the socket to communicate a request
-// back fo a certain type, then add it onto the data array.
-// function stat_request(req_type){
-
-//   var data_point = 0;
-//   var first_pass = true;
-
-//   request = {type : req_type};
-//   socket.emit('stat request', { req: request });
-
-//   socket.on('request ans', function (data) {
-//     data_point = data['ans'];
-//     if(first_pass){ 
-//       update_data_array(data_point, req_type); 
-//       first_pass = false; 
-//     }
-//   });
-
-// }
-
 // Once we have the data back from the database we add it and the name of the
 // page it is from to the data and page name arrays to be referenced later.
 // function update_data_array(data_point, req_type) {
@@ -139,7 +106,7 @@ function make_d3(){
   var curr_page = 0;
 
   //Width and height of the graph.
-  var w = 600;
+  var w = 400;
   var h = 400;
 
   // The default dataset to be loaded in. This displays the format of the
@@ -306,15 +273,8 @@ function make_d3(){
   // This randomly picks a unique colour from the colour scheme not used
   // before on the same graph.
   function pick_colour(){
-    // do{
-    //   colour = Math.floor(Math.random() * 6);
-    // }while(used_colours.indexOf(colour) > -1);
-    // used_colours.push(colour);
-    // return colours[colour];
 
-    // colour = Math.floor(Math.random() * 6)
-    // return colours[colour];
-    return('rgb(0,137,255)')
+      return('rgb(0,137,255)')
   }
 
 }  
