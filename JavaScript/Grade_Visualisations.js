@@ -51,7 +51,7 @@ function assign_button_listener(){
 // to update the data.
 function run_checks(){
 
-  print(tab_buttons['comp_sci_tab'].className)
+  console.log(tab_buttons['comp_sci_tab'].className)
 
   if(tab_buttons['comp_sci_tab'].checked){ 
     button_check('comp_sci_tab'); 
