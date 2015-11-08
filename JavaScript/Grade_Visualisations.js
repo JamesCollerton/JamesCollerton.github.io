@@ -24,12 +24,11 @@ var first_pass = true;
 
 // List of all of the radio buttons from the page used for registering
 // clicks.
-// var radio_buttons = {
-//   time_radio : document.getElementById("time"),
-//   clicks_radio : document.getElementById("clicks"),
-//   hits_radio: document.getElementById("hits"),
-//   contacts_radio: document.getElementById("contacts"),
-// };
+var tab_buttons = {
+  comp_sci_tab : document.getElementById("comp_sci_tab"),
+  math_tab : document.getElementById("math_tab"),
+  a_level_tab : document.getElementById("a_level_tab")
+};
 
 // A selection of nice looking colours that can be randomly chosen from
 // for the graph so that it looks good. I originally wrote a random colour
