@@ -213,7 +213,8 @@ function make_d3(){
       //Update all rects
       svg.selectAll("rect")
          .data(dataset)
-         .transition()
+         // .transition()
+         .enter()
          .delay(function(d, i) {
            return i / dataset.length * 1000;
          })
