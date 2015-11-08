@@ -242,7 +242,7 @@ function make_d3(){
 
       bars.transition().duration(500)
           .attr("transform", function(d, i) { 
-               return "translate(" + labelpad + "," + yScale(i) + ")"; 
+               return "translate(" + h_padding + "," + yScale(i) + ")"; 
            })
           .selectAll("svg:rect")
            .attr("width", xScale.rangeBand())
