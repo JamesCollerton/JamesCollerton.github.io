@@ -217,6 +217,9 @@ function make_d3(){
            return i / dataset.length * 1000;
          })
          .duration(500)
+         .attr("x", function(d, i) {
+            return xScale(i) + xScale.rangeBand() / 2;
+          })
          .attr("y", function(d) {
             return h - yScale(d);
          })
