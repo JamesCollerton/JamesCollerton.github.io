@@ -190,7 +190,7 @@ function make_d3(){
     .call(y_axis);
 
   //On click, update with new data      
-  d3.select("#update_stats")
+  d3.select("#tab_update")
     .on("click", function() {
 
       // When we click we update the dataset to the new data,
