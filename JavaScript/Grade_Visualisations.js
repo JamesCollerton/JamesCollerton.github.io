@@ -19,16 +19,20 @@ var bsc_results = [73, 76, 66, 81, 74, 77, 82, 83, 82, 83, 82, 79, 94, 76, 91, 7
 var a_level_units = ['Maths', 'Further Maths', 'Chemistry']
 var a_level_results = [100, 100, 100]
 
-// Left over, might be useful later.
-var first_pass = true;
+var data = msc_results;
+var page_names = bsc_results;
+
+// Current page counter for when we're assigning names.
 var curr_page = 0
 
 // List of all of the radio buttons from the page used for registering
 // clicks.
 var tab_buttons = {
+
   comp_sci_tab : document.getElementById("comp_sci_tab"),
   math_tab : document.getElementById("math_tab"),
   a_level_tab : document.getElementById("a_level_tab")
+
 };
 
 // A selection of nice looking colours that can be randomly chosen from
@@ -51,7 +55,7 @@ function assign_button_listener(){
 // to update the data.
 function run_checks(){
 
-  console.log(tab_buttons['comp_sci_tab'].className)
+  // console.log(tab_buttons['comp_sci_tab'].className)
 
   if(tab_buttons['comp_sci_tab'].className == 'active'){ 
     button_check('comp_sci_tab'); 
@@ -83,14 +87,12 @@ function button_check(button){
     page_names = a_level_units;
   }
 
-  make_d3();
-
 }
 
+make_d3();
 assign_button_listener();
 
 ////////////////////////////////////////////////////////////////////////////////
-// make_d3()
 
 function make_d3(){
 
@@ -251,20 +253,12 @@ function make_d3(){
   // are too long we only print the first word. The only exception is
   // user statistics as 'User' makes no sense, so we change this to stats.
   function get_page_name(){
-    // page_title = curr_page % 7;
-    // ++curr_page;
-    // var page_name = String(page_names[page_title]);
-    // var split = page_name.split(" ")[0];
-    // if(split == "User"){ split = "Stats"; }
-    // return(split);
 
-    // page_names = bsc_units;
-    // page_names = msc_units;
     page_to_display = curr_page
     curr_page = (curr_page + 1) % page_names.length;
+
     return(page_names[page_to_display]);
 
-    // return('Misc');
   }
 
   // This randomly picks a unique colour from the colour scheme not used
