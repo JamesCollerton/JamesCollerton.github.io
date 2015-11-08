@@ -51,15 +51,15 @@ function assign_button_listener(){
 // to update the data.
 function run_checks(){
 
-  print(radio_buttons['comp_sci_tab'].attr('class'))
+  print(tab_buttons['comp_sci_tab'].attr('class'))
 
-  if(radio_buttons['comp_sci_tab'].checked){ 
+  if(tab_buttons['comp_sci_tab'].checked){ 
     button_check('comp_sci_tab'); 
   }
-  else if(radio_buttons['math_tab'].checked){ 
+  else if(tab_buttons['math_tab'].checked){ 
     button_check('math_tab'); 
   }
-  else if(radio_buttons['a_level_tab'].checked){
+  else if(tab_buttons['a_level_tab'].checked){
     button_check('a_level_tab');
   }
 }
