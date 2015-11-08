@@ -250,6 +250,11 @@ function make_d3(){
         .transition()
         .duration(500)
         .call(y_axis);
+
+      svg.select(".x.axis")
+        .transition()
+        .duration(500)
+        .call(x_axis);
                 
     });
 
