@@ -20,7 +20,7 @@ var a_level_units = ['Maths', 'Further Maths', 'Chemistry']
 var a_level_results = [100, 100, 100]
 
 var data = msc_results;
-var page_names = bsc_results;
+var page_names = msc_units;
 
 // Current page counter for when we're assigning names.
 var curr_page = 0
