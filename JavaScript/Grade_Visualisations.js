@@ -280,6 +280,8 @@ function make_d3(){
                 
     });
 
+  curr_page = 0
+
   // This is used to get the names of the pages to put onto the graph.
   // We work up the numbers 0-6 where the names are stored and if they
   // are too long we only print the first word. The only exception is
@@ -293,7 +295,8 @@ function make_d3(){
     // return(split);
 
     page_names = msc_units;
-    return(page_names[0]);
+    curr_page = (curr_page + 1) % page_names.length;
+    return(page_names[curr_page]);
 
     // return('Misc');
   }
