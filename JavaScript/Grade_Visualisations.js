@@ -53,13 +53,13 @@ function run_checks(){
 
   console.log(tab_buttons['comp_sci_tab'].className)
 
-  if(tab_buttons['comp_sci_tab'].checked){ 
+  if(tab_buttons['comp_sci_tab'].className == 'active'){ 
     button_check('comp_sci_tab'); 
   }
-  else if(tab_buttons['math_tab'].checked){ 
+  else if(tab_buttons['math_tab'].className == 'active'){ 
     button_check('math_tab'); 
   }
-  else if(tab_buttons['a_level_tab'].checked){
+  else if(tab_buttons['a_level_tab'].className == 'active'){
     button_check('a_level_tab');
   }
 }
