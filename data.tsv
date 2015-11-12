@@ -1,27 +1,30 @@
 letter	frequency
-Comp Arch	.08167
-Databases	.01492
-C	.02782
-Java	.04253
-Research Skills	.12702
-Group Project	.02288
-Web Tech	.02015
-H	.06094
-I	.06966
-J	.00153
-K	.00772
-L	.04025
-M	.02406
-N	.06749
-O	.07507
-P	.01929
-Q	.00095
-R	.05987
-S	.06327
-T	.09056
-U	.02758
-V	.00978
-W	.02360
-X	.00150
-Y	.01974
-Z	.00074
+Comp Arch	0.74
+Databases	0.9
+C	0.82
+Java	0.86
+Research	0.77
+Group	0.72
+Web Tech	0.75
+Num Theory	0.76
+Analysis	0.73
+Analysis 2	0.83
+Prob 1	0.66
+Stats 1	0.81
+Comp Math	0.82
+LAG	0.74
+Calc 1	0.77
+Mech 1	0.82
+Stats 2	0.82
+Prob 2	0.83
+Chinese	0.76
+Calc 2	0.79
+ODE 2	0.91
+Optim 2	0.94
+Economics	0.72
+Project	0.78
+Bayes A		0.59
+Bayes B 	0.75
+Financial	0.8
+Time Series	0.71
+Inference 	0.7
