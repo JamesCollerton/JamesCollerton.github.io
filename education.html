@@ -477,14 +477,18 @@ function replay(data) {
   }
 
   slices.forEach(function(slice, index){
-    console.log(slice[0])
-  });
-
-  slices.forEach(function(slice, index){
     setTimeout(function(){
       draw(slice);
     }, index * 1000);
   });
+
+  for (var i = 0; i < data.length; i++) {
+    slices.pop();
+    setTimeout(function(){
+      draw(slices[slices.length]);
+    }, index * 1000);
+  });
+  }
 
 }
 
