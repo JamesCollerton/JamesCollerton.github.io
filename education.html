@@ -475,11 +475,15 @@ function replay(data) {
   for (var i = 0; i < data.length; i++) {
     slices.push(data.slice(0, i));
   }
+
+  console.log(slices)
+
   slices.forEach(function(slice, index){
     setTimeout(function(){
       draw(slice);
     }, index * 1000);
   });
+
 }
 
 function draw(data) {
