@@ -233,55 +233,55 @@ function make_d3(){
       //     return pick_colour();
       //    });
 
-      // bars = svg.selectAll("rect")
-      //            .data(data);
+      bars = svg.selectAll("rect")
+                 .data(data);
 
-      // bars.enter().append("svg:g")
-      //     .attr("class", "bar")
-      //     .append("rect");
+      bars.enter().append("svg:g")
+          .attr("class", "bar")
+          .append("rect");
 
-      // bars.transition().duration(500)
-      //     .attr("transform", function(d, i) { 
-      //          return "translate(" + h_padding + "," + yScale(i) + ")"; 
-      //      })
-      //     .selectAll("rect")
-      //      .attr("width", xScale.rangeBand())
-      //      .attr("y", function(d) {
-      //         return h - yScale(d);
-      //      })
-      //      .attr("height", function(d) {
-      //         return yScale(d);
-      //      })
-      //      .attr("fill", function(d) {
-      //       return pick_colour();
-      //      });
+      bars.transition().duration(500)
+          .attr("transform", function(d, i) { 
+               return "translate(" + h_padding + "," + yScale(i) + ")"; 
+           })
+          .selectAll("rect")
+           .attr("width", xScale.rangeBand())
+           .attr("y", function(d) {
+              return h - yScale(d);
+           })
+           .attr("height", function(d) {
+              return yScale(d);
+           })
+           .attr("fill", function(d) {
+            return pick_colour();
+           });
 
-      // bars.exit().transition().duration(500)
-      //     .selectAll("rect")
-      //     .attr("height", 0)
-      //     .remove();
+      bars.exit().transition().duration(500)
+          .selectAll("rect")
+          .attr("height", 0)
+          .remove();
 
-      // svg.selectAll("rect")
-      //  .data(dataset)
-      //  .remove()
+      svg.selectAll("rect")
+       .data(dataset)
+       .remove()
 
-      // svg.selectAll("rect")
-      //  .data(dataset)
-      //  .enter()
-      //  .append("rect")
-      //  .attr("x", function(d, i) {
-      //     return xScale(i);
-      //  })
-      //  .attr("y", function(d) {
-      //     return h - yScale(d);
-      //  })
-      //  .attr("width", xScale.rangeBand())
-      //  .attr("height", function(d) {
-      //     return yScale(d);
-      //  })
-      //  .attr("fill", function(d) {
-      //   return pick_colour();
-      //  });
+      svg.selectAll("rect")
+       .data(dataset)
+       .enter()
+       .append("rect")
+       .attr("x", function(d, i) {
+          return xScale(i);
+       })
+       .attr("y", function(d) {
+          return h - yScale(d);
+       })
+       .attr("width", xScale.rangeBand())
+       .attr("height", function(d) {
+          return yScale(d);
+       })
+       .attr("fill", function(d) {
+        return pick_colour();
+       });
 
       //Update all labels
       svg.selectAll("text")
