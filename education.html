@@ -476,18 +476,20 @@ function replay(data) {
     slices.push(data.slice(0, i));
   }
 
+  slices.reverse()
+
   slices.forEach(function(slice, index){
     setTimeout(function(){
-      draw(slice);
+      	draw(slice);
     }, index * 1000);
   });
 
-  for (var i = 0; i < data.length; i++) {
-    slices.pop();
-    setTimeout(function(){
-      	draw(slices[slices.length]);
-    	}, 1000);
-  	}
+  // for (var i = 0; i < data.length; i++) {
+  //   slices.pop();
+  //   setTimeout(function(){
+  //     	console.log(slices[slices.length]);
+  //   	}, 1000);
+  // 	}
 
 }
 
@@ -507,11 +509,14 @@ function draw(data) {
   svg.select(".y.axis").transition().duration(300).call(yAxis)
 
   // THIS IS THE ACTUAL WORK!
-  var bars = svg.selectAll(".bar").data(data, function(d) { return d.letter; }) // (data) is an array/iterable thing, second argument is an ID generator function
+  var bars = svg.selectAll(".bar")
+  				.data(data, function(d) { 
+  					return d.letter; 
+  				}) // (data) is an array/iterable thing, second argument is an ID generator function
 
   bars.exit()
     .transition()
-      .duration(300)
+    .duration(300)
     .attr("y", y(0))
     .attr("height", height - y(0))
     .style('fill-opacity', 1e-6)
