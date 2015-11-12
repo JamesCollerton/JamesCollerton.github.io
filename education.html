@@ -476,7 +476,9 @@ function replay(data) {
     slices.push(data.slice(0, i));
   }
 
-  console.log(slices[0])
+  slices.forEach(function(slice, index){
+    console.log(slice)
+  });
 
   slices.forEach(function(slice, index){
     setTimeout(function(){
