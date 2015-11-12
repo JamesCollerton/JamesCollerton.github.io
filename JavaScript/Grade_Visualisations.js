@@ -368,17 +368,17 @@
 
 // Mike Bostock "margin conventions"
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+              width = 960 - margin.left - margin.right,
+              height = 500 - margin.top - margin.bottom;
 
 // D3 scales = just math
 // x is a function that transforms from "domain" (data) into "range" (usual pixels)
 // domain gets set after the data loads
 var x = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .1);
+        .rangeRoundBands([0, width], .1);
 
 var y = d3.scale.linear()
-    .range([height, 0]);
+        .range([height, 0]);
 
 // D3 Axis - renders a d3 scale in SVG
 var xAxis = d3.svg.axis()
@@ -416,7 +416,9 @@ svg.append("g")
 
 // d3.tsv is a wrapper around XMLHTTPRequest, returns array of arrays (?) for a TSV file
 // type function transforms strings to numbers, dates, etc.
-data = [[1, 1], [1, 2]]
+d3.tsv("data.tsv", type, function(error, data) {
+  replay(data);
+});
 
 function type(d) {
   // + coerces to a Number from a String (or anything)
