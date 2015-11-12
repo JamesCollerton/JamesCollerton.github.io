@@ -416,9 +416,11 @@ svg.append("g")
 
 // d3.tsv is a wrapper around XMLHTTPRequest, returns array of arrays (?) for a TSV file
 // type function transforms strings to numbers, dates, etc.
-d3.tsv("data.tsv", type, function(error, data) {
-  replay(data);
-});
+// d3.tsv("data.tsv", type, function(error, data) {
+//   replay(data);
+// });
+
+var data = [1, 2, 3, 4]
 
 function type(d) {
   // + coerces to a Number from a String (or anything)
