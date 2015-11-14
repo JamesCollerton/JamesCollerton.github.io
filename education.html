@@ -444,23 +444,18 @@ function run_checks(data){
 // page names in order. Then make a request for the given type.
 function button_check(button, data){
 
-  curr_page = 0;
-
   if(button == 'comp_sci_tab'){
 
+  	console.log("MSc Slice")
   	msc_slice = data.slice(0, 7)
   	draw(msc_slice)
 
-    // data = msc_results;
-    // page_names = msc_units;
   }
   else if(button == 'math_tab'){
 
+  	console.log("BSc Slice")
   	bsc_slice = data.slice(7, data.length)
   	draw(bsc_slice)
-
-    // data = bsc_results;
-    // page_names = bsc_units;
 
   }
   else if(button == 'a_level_tab'){
