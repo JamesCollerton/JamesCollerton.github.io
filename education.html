@@ -530,7 +530,10 @@ function replay(data) {
 
   slices.reverse()
 
-  slices.forEach(function(slice, index){
+  msc_slices = slices[0:6]
+  bsc_slices = slices[6: slices.length]
+
+  msc_slices.forEach(function(slice, index){
     setTimeout(function(){
       	draw(slice);
     }, index * 1000);
