@@ -536,6 +536,10 @@ function replay(data) {
 
   draw(bsc_slice)
 
+  setTimeout(function(){
+      	draw(msc_slice)
+   }, 1000);
+
   // msc_slices.forEach(function(slice, index){
   //   setTimeout(function(){
   //     	draw(slice);
