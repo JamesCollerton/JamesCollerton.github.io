@@ -423,7 +423,13 @@ function assign_button_listener(tsv_data){
     tab_buttons[button].addEventListener( 
           'click', 
            function(){
+
+           	setTimeout(function(){
+
               run_checks(tsv_data);
+
+             }, 100); 
+
            }, false 
 	);
   }
