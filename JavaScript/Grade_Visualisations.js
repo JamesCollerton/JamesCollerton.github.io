@@ -28,9 +28,6 @@ function assign_button_listener(tsv_data){
 
 function run_checks(data){
 
-  // console.log(tab_buttons['comp_sci_tab'].className)
-  console.log(data)
-
   if(tab_buttons['comp_sci_tab'].className == 'active'){ 
     button_check('comp_sci_tab', data); 
   }
@@ -48,7 +45,6 @@ function button_check(button, data){
 
   if(button == 'comp_sci_tab'){
 
-    console.log("MSc Slice")
     console.log(data)
     msc_slice = data.slice(0, 7)
     draw(msc_slice)
@@ -56,17 +52,12 @@ function button_check(button, data){
   }
   else if(button == 'math_tab'){
 
-    console.log("BSc Slice")
     bsc_slice = data.slice(7, 29)
     draw(bsc_slice)
 
   }
   else if(button == 'a_level_tab'){
 
-    // data = a_level_results;
-    // page_names = a_level_units;
-
-    console.log("BSc Slice")
     bsc_slice = data.slice(29, data.length)
     draw(bsc_slice)
 
@@ -134,42 +125,6 @@ function type(d) {
   // + coerces to a Number from a String (or anything)
   d.frequency = +d.frequency;
   return d;
-}
-
-function replay(data) {
-  var count = 4;
-  var slices = [];
-  for (var i = 0; i < data.length; i++) {
-    slices.push(data.slice(0, i));
-  }
-
-  // assign_button_listener(data)
-
-  // slices.reverse()
-
-  // msc_slice = data.slice(0, 7)
-  // bsc_slice = data.slice(7, data.length)
-  // // bsc_slices = slices.slice(6, slices.length)
-
-  // draw(bsc_slice)
-
-  // setTimeout(function(){
-  //      draw(msc_slice)
-  //  }, 1000);
-
-  // msc_slices.forEach(function(slice, index){
-  //   setTimeout(function(){
-  //      draw(slice);
-  //   }, index * 1000);
-  // });
-
-  // for (var i = 0; i < data.length; i++) {
-  //   slices.pop();
-  //   setTimeout(function(){
-  //      console.log(slices[slices.length]);
-  //    }, 1000);
-  //  }
-
 }
 
 function draw(data) {
