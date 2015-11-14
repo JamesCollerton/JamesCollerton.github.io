@@ -417,32 +417,32 @@ var tab_buttons = {
 
 };
 
-function assign_button_listener(){
+function assign_button_listener(data){
 
   for(button in tab_buttons){ 
-    tab_buttons[button].addEventListener('click', run_checks); 
+    tab_buttons[button].addEventListener('click', run_checks(data)); 
   }
 
 }
 
-function run_checks(){
+function run_checks(data){
 
   // console.log(tab_buttons['comp_sci_tab'].className)
 
   if(tab_buttons['comp_sci_tab'].className == 'active'){ 
-    button_check('comp_sci_tab'); 
+    button_check('comp_sci_tab', data); 
   }
   else if(tab_buttons['math_tab'].className == 'active'){ 
-    button_check('math_tab'); 
+    button_check('math_tab', data); 
   }
   else if(tab_buttons['a_level_tab'].className == 'active'){
-    button_check('a_level_tab');
+    button_check('a_level_tab', data);
   }
 }
 
 // Empty the data and the page names columns to add new data and get the
 // page names in order. Then make a request for the given type.
-function button_check(button){
+function button_check(button, data){
 
   curr_page = 0;
 
@@ -539,7 +539,7 @@ function replay(data) {
     slices.push(data.slice(0, i));
   }
 
-  assign_button_listener()
+  assign_button_listener(data)
 
   // slices.reverse()
 
