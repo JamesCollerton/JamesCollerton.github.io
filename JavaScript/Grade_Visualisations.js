@@ -73,7 +73,7 @@ function button_check(button, data){
 // Mike Bostock "margin conventions"
 var margin = {top: 20, right: 20, bottom: 70, left: 40},
           width = 500 - margin.left - margin.right,
-          height = 500 - margin.top - margin.bottom;
+          height = 400 - margin.top - margin.bottom;
 
 // D3 scales = just math
 // x is a function that transforms from "domain" (data) into "range" (usual pixels)
