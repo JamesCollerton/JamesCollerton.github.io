@@ -519,6 +519,7 @@ svg.append("g")
 // type function transforms strings to numbers, dates, etc.
 d3.tsv("data.tsv", type, function(error, data) {
   replay(data);
+  assign_button_listener(data)
 });
 
 function type(d) {
@@ -534,7 +535,7 @@ function replay(data) {
     slices.push(data.slice(0, i));
   }
 
-  assign_button_listener(data)
+  // assign_button_listener(data)
 
   // slices.reverse()
 
