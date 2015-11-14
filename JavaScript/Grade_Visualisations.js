@@ -1,4 +1,6 @@
+// Code to create the visualisations.
 
+// Creates a vector of all the tabs we want to look at.
 var tab_buttons = {
 
   comp_sci_tab : document.getElementById("comp_sci_tab"),
@@ -7,6 +9,8 @@ var tab_buttons = {
 
 };
 
+// Adds a click listener to each of the buttons. Adds a short delay on the
+// animation so that the right tab is counted as active.
 function assign_button_listener(tsv_data){
 
   for(button in tab_buttons){ 
@@ -26,6 +30,8 @@ function assign_button_listener(tsv_data){
 
 }
 
+// Runs checks when a button is clicked and sees which one is active, then
+// passes the argument to the button check
 function run_checks(data){
 
   if(tab_buttons['comp_sci_tab'].className == 'active'){ 
@@ -39,13 +45,12 @@ function run_checks(data){
   }
 }
 
-// Empty the data and the page names columns to add new data and get the
-// page names in order. Then make a request for the given type.
+// Depending on the button type it selects a different part of the data and
+// displays it to the screen.
 function button_check(button, data){
 
   if(button == 'comp_sci_tab'){
 
-    console.log(data)
     msc_slice = data.slice(0, 7)
     draw(msc_slice)
 
