@@ -499,10 +499,17 @@ var svg = d3.select("body").append("svg")
 svg.append("g")
     .attr("class", "x axis")
     .attr("transform", "translate(0," + height + ")")
+    .selectAll("text")  
+    .style("text-anchor", "end")
+    .attr("dx", "-.8em")
+    .attr("dy", ".15em")
+    .attr("transform", function(d) {
+        return "rotate(-65)" 
+    });
 
 svg.append("g")
     .attr("class", "y axis")
-  .append("text") // just for the title (ticks are automatic)
+  	.append("text") // just for the title (ticks are automatic)
     .attr("transform", "rotate(-90)") // rotate the text!
     .attr("y", 6)
     .attr("dy", ".71em")
