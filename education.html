@@ -417,13 +417,13 @@ var tab_buttons = {
 
 };
 
-function assign_button_listener(data){
+function assign_button_listener(tsv_data){
 
   for(button in tab_buttons){ 
     tab_buttons[button].addEventListener( 
           'click', 
-           function(data){
-              run_checks(data);
+           function(){
+              run_checks(tsv_data);
            }, false 
 	);
   }
