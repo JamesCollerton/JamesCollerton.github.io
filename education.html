@@ -409,6 +409,56 @@
 <!-- <script src="d3.v3.min.js"></script> -->
 <script>
 
+var tab_buttons = {
+
+  comp_sci_tab : document.getElementById("comp_sci_tab"),
+  math_tab : document.getElementById("math_tab"),
+  a_level_tab : document.getElementById("a_level_tab")
+
+};
+
+function assign_button_listener(){
+
+  for(button in tab_buttons){ 
+    tab_buttons[button].addEventListener('click', run_checks); 
+  }
+
+}
+
+function run_checks(){
+
+  // console.log(tab_buttons['comp_sci_tab'].className)
+
+  if(tab_buttons['comp_sci_tab'].className == 'active'){ 
+    button_check('comp_sci_tab'); 
+  }
+  else if(tab_buttons['math_tab'].className == 'active'){ 
+    button_check('math_tab'); 
+  }
+  else if(tab_buttons['a_level_tab'].className == 'active'){
+    button_check('a_level_tab');
+  }
+}
+
+// Empty the data and the page names columns to add new data and get the
+// page names in order. Then make a request for the given type.
+function button_check(button){
+
+  curr_page = 0;
+
+  if(button == 'comp_sci_tab'){
+    data = msc_results;
+    page_names = msc_units;
+  }
+  else if(button == 'math_tab'){
+    data = bsc_results;
+    page_names = bsc_units;
+  }
+  else if(button == 'a_level_tab'){
+    data = a_level_results;
+    page_names = a_level_units;
+  }
+
 // Mike Bostock "margin conventions"
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
     		  width = 960 - margin.left - margin.right,
