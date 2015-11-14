@@ -420,9 +420,12 @@ var tab_buttons = {
 function assign_button_listener(data){
 
   for(button in tab_buttons){ 
-    tab_buttons[button].addEventListener('click', function(data, [params]){
-              run_checks(data)
-           })  
+    tab_buttons[button].addEventListener( 
+          'click', 
+           function(data){
+              run_checks(data);
+           } 
+	);
   }
 
 }
@@ -430,6 +433,7 @@ function assign_button_listener(data){
 function run_checks(data){
 
   // console.log(tab_buttons['comp_sci_tab'].className)
+  console.log(data)
 
   if(tab_buttons['comp_sci_tab'].className == 'active'){ 
     button_check('comp_sci_tab', data); 
