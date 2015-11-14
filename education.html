@@ -420,7 +420,7 @@ var tab_buttons = {
 function assign_button_listener(data){
 
   for(button in tab_buttons){ 
-    tab_buttons[button].addEventListener('click', function(data){
+    tab_buttons[button].addEventListener('click', function(data, [params]){
               run_checks(data)
            })  
   }
