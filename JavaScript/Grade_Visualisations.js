@@ -57,7 +57,7 @@ function button_check(button, data){
   else if(button == 'math_tab'){
 
     console.log("BSc Slice")
-    bsc_slice = data.slice(7, 30)
+    bsc_slice = data.slice(7, 29)
     draw(bsc_slice)
 
   }
@@ -67,7 +67,7 @@ function button_check(button, data){
     // page_names = a_level_units;
 
     console.log("BSc Slice")
-    bsc_slice = data.slice(30, data.length)
+    bsc_slice = data.slice(29, data.length)
     draw(bsc_slice)
 
   }
