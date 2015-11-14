@@ -530,14 +530,17 @@ function replay(data) {
 
   slices.reverse()
 
-  msc_slices = slices.slice(0,6)
-  bsc_slices = slices.slice(6, slices.length)
+  msc_slice = data.slice(0, 6)
+  bsc_slice = data.slice(6, data.length)
+  // bsc_slices = slices.slice(6, slices.length)
 
-  msc_slices.forEach(function(slice, index){
-    setTimeout(function(){
-      	draw(slice);
-    }, index * 1000);
-  });
+  draw(bsc_slice)
+
+  // msc_slices.forEach(function(slice, index){
+  //   setTimeout(function(){
+  //     	draw(slice);
+  //   }, index * 1000);
+  // });
 
   // for (var i = 0; i < data.length; i++) {
   //   slices.pop();
