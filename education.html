@@ -499,13 +499,6 @@ var svg = d3.select("body").append("svg")
 svg.append("g")
     .attr("class", "x axis")
     .attr("transform", "translate(0," + height + ")")
-    .selectAll("text")  
-    .style("text-anchor", "end")
-    .attr("dx", "-.8em")
-    .attr("dy", ".15em")
-    .attr("transform", function(d) {
-        return "rotate(-65)" 
-    });
 
 svg.append("g")
     .attr("class", "y axis")
@@ -572,6 +565,15 @@ function draw(data) {
 
   // same for yAxis but with more transform and a title
   svg.select(".y.axis").transition().duration(300).call(yAxis)
+
+  svg.select('.x.axis')
+    .selectAll("text")  
+    .style("text-anchor", "end")
+    .attr("dx", "-.8em")
+    .attr("dy", ".15em")
+    .attr("transform", function(d) {
+        return "rotate(-65)" 
+    });
 
   // THIS IS THE ACTUAL WORK!
   var bars = svg.selectAll(".bar")
