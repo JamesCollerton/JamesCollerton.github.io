@@ -503,7 +503,7 @@ svg.append("g")
 svg.append("g")
     .attr("class", "y axis")
   .append("text") // just for the title (ticks are automatic)
-    .attr("transform", "rotate(-90)") // rotate the text!
+    // .attr("transform", "rotate(-90)") // rotate the text!
     .attr("y", 6)
     .attr("dy", ".71em")
     .style("text-anchor", "end")
@@ -531,7 +531,7 @@ function replay(data) {
   slices.reverse()
 
   msc_slice = data.slice(0, 6)
-  bsc_slice = data.slice(6, data.length)
+  bsc_slice = data.slice(7, data.length)
   // bsc_slices = slices.slice(6, slices.length)
 
   draw(bsc_slice)
