@@ -90,6 +90,11 @@ changes, this makes the hover animation look a lot smoother.*/
     /*color: rgb(0,0,0,0.1);*/
 }
 
+.drop_down_hover:hover 
+{
+    color: rgb(0,0,0,0.1);
+}
+
 /*Used in the about page so that when you click things appear.*/
 .invisible
 {
