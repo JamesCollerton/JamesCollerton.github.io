@@ -90,6 +90,12 @@ changes, this makes the hover animation look a lot smoother.*/
     /*color: rgb(0,0,0,0.1);*/
 }
 
+.drop_down_hover {
+   opacity: 1;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
 .drop_down_hover:hover 
 {
     color: rgb(0,0,0,0.1);
