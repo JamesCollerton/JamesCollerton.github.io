@@ -9,3 +9,13 @@ body {
 	width: 100%;
 	height: 25%;
 }
+
+.imgHolder{
+    display:inline-block;
+    background:#000;
+}
+
+/*.fade_hover:hover
+{
+	hover
+}*/
