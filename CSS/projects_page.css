@@ -11,6 +11,8 @@ body {
 }
 
 .imgHolder{
+	width: 100%;
+	height: 25%;
     display:inline-block;
     background:#000;
 }
