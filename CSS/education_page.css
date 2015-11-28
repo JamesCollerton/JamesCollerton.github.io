@@ -23,3 +23,11 @@ body {
 	height: 90%;
 
 }
+
+.centre_body {
+
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
