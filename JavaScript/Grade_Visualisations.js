@@ -120,7 +120,7 @@ svg.append("g")
 
 // d3.tsv is a wrapper around XMLHTTPRequest, returns array of arrays (?) for a TSV file
 // type function transforms strings to numbers, dates, etc.
-d3.tsv("data.tsv", type, function(error, data) {
+d3.tsv("Data/data.tsv", type, function(error, data) {
   msc_slice = data.slice(0, 7)
   draw(msc_slice)
   assign_button_listener(data)
