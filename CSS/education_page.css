@@ -30,3 +30,15 @@ body {
   top: 50%;
 
 }
+
+.main_title
+{
+	font-size: 100px;
+	text-align: center;
+}
+
+.education_text
+{
+	font-size: 20px;
+	text-align: center;
+}
