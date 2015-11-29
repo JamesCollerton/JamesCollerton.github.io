@@ -17,7 +17,7 @@ body {
     background:#000;
 }
 
-/*.fade_hover:hover
+.main_title
 {
-	hover
-}*/
+	font-size: 100px;
+}
