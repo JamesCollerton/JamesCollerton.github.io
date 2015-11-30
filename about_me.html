@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<!-- Declares the necessary HTML5 type. -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang ="en-GB" xml:lang="en-GB">
+
+<head>
+
+	<!-- NOTE: JS script links are contained at the bottom of the page for
+	faster loading. -->
+
+	<!-- WARNING: D3 JS needs to be linked at the top of the page to work properly. -->
+	<script type="text/javascript" src="D3/d3.v3.js"></script>
+
+	<!-- Linked stylesheets -->
+	<link rel="stylesheet" href="CSS/normalize.css"/>
+	<link rel="stylesheet" href="CSS/bootstrap.css"/>
+	<link rel="stylesheet" href="CSS/fade_functions.css"/>
+	<link rel="stylesheet" href="CSS/text_on_img.css"/>
+	<link rel="stylesheet" href="CSS/whitespace_styles.css"/>
+	<link rel="stylesheet" href="CSS/about_me_page.css"/>
+	<!-- Note the first one is to normalize the css across browsers. -->
+
+	<!-- Google font API for fonts. -->
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+	<!-- Used so that Bootstrap can access what size the screen is. -->
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0"/>
+
+	<!-- For IE polyfills. -->
+	<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+
+	<!-- Specifying charset as part of HTML5 standard. -->
+	<meta charset="UTF-8"/>
+
+	<!-- This creates the icon for the website you see. -->
+	<link rel="shortcut icon" href="http://www.iconj.com/ico/y/c/ycecxakndp.ico" type="image/x-icon" />
+
+	<!-- Polyfills for Internet Explorer. I included them to show I knew what they
+		 were and how they worked. However this site does not function well on IE. -->
+	<!--[if IE]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.js"></script>
+    <![endif]-->    
+
+	<title>About Me.</title>
+
+</head>
+
+<body>
+
+	<!-- Facebook root for page -->
+	<div id="fb-root"></div>
+
+	<!-- //////////////////////////////////////////////////////////////////// -->
+	<!-- //////////////////// TOP NAVBAR DEFINITION ///////////////////////// -->
+	<!-- //////////////////////////////////////////////////////////////////// -->
+
+	<div class = "navbar navbar-inverse navbar-fixed-top">
+
+		<div class = "container">
+
+			<!-- Name to be displayed in top right. -->
+			<a href = "landing_page.html" class = "navbar-brand">
+				J. Collerton
+			</a>
+
+			<!-- Used so that when the navbar compresses to a certain
+			level it becomes three lines that can be opened into a bigger
+			menu. -->
+			<button class = "navbar-toggle" 
+			 data-toggle = "collapse" 
+			 data-target = ".navHeaderCollapse">
+
+				<span class = "icon-bar"></span>
+				<span class = "icon-bar"></span>
+				<span class = "icon-bar"></span>
+
+			</button>
+
+			<!-- Definitions of links for Navbar. -->
+			<div class = "collapse navbar-collapse navHeaderCollapse">
+
+				<!-- Pulls the buttons to the right. -->
+				<ul class = "nav navbar-nav navbar-right">
+
+					<!-- Education button. -->
+					<li><a href = "education.html">Education</a></li>
+
+					<!-- Projects section. -->
+					<li class ="active"><a href = "">Projects</a></li>
+
+					<!-- About Me section. -->
+					<li><a href = "">About Me</a></li>
+
+				</ul> <!-- End of right buttons. -->
+
+			</div> <!-- End of navbar buttons. -->
+
+		</div> <!-- End of container. -->
+
+	</div> <!-- End of navbar. -->
+
+	<div class = "create_ws_ninety"></div>
+
+	<!-- //////////////////////////////////////////////////////////////////// -->
+	<!-- ////////////// END OF TOP NAVBAR DEFINITION  /////////////////////// -->
+	<!-- //////////////////////////////////////////////////////////////////// -->
+
+	<!-- //////////////////////////////////////////////////////////////////// -->
+	<!-- //////////////////// MAIN PAGE DEFINITION ////////////////////////// -->
+	<!-- //////////////////////////////////////////////////////////////////// -->
+
+	<h1 class = "main_title"> About Me </h1>
+
+	<div class = "create_ws_twenty"></div>
+
+	<div class = "container">
+
+		<div class = "row">
+
+			<!-- Column to contain the text. -->
+			<div class = "col-md-12">
+
+				<p class = "about_me_text">
+					This is the projects page where you can learn a little bit more
+					about some of the projects I've done inside and outside of university.
+					Click on some of the images below to find out more!
+				</p>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class = "create_ws_sixty"></div>
+
+	<!-- //////////////////////////////////////////////////////////////////// -->
+	<!-- ////////////// END OF MAIN PAGE DEFINITION  //////////////////////// -->
+	<!-- //////////////////////////////////////////////////////////////////// -->
+
+	<!-- //////////////////////////////////////////////////////////////////// -->
+	<!-- ///////////////// BOTTOM NAVBAR DEFINITION ///////////////////////// -->
+	<!-- //////////////////////////////////////////////////////////////////// -->
+
+	<div class = "create_ws_ninety"></div>
+
+	<div class= "navbar navbar-inverse navbar-fixed-bottom">
+
+		<div class = "container">
+
+			<p class = "navbar-text pull-left">
+				J. Collerton
+			</p>
+
+		</div>
+
+	</div> 
+
+
+	<!-- //////////////////////////////////////////////////////////////////// -->
+	<!-- ///////////////// END OF BOTTOM NAVBAR DEFINITION ////////////////// -->
+	<!-- //////////////////////////////////////////////////////////////////// -->
+
+	<!-- JQuery and JS scripts. 
+		 Note: JQuery may not run on SAFE because of needing to access that library. -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- Custom scripts -->
+	<script src = "JavaScript/bootstrap.js"></script>
+	<script src = "JavaScript/popover.js"></script>
+
+</body>
+
+</html>

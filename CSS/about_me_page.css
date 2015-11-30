@@ -1,0 +1,17 @@
+body {
+
+     font-family: 'Oswald', sans-serif;
+
+}
+
+.main_title
+{
+	font-size: 100px;
+	text-align: center;
+}
+
+.about_me_text
+{
+	font-size: 20px;
+	text-align: center;
+}
