@@ -29,6 +29,7 @@ body {
 
 .vert_center
 {
-    vertical-align: middle;
+    float: none;
     display: inline-block;
+    vertical-align: middle;
 }
