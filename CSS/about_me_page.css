@@ -29,6 +29,6 @@ body {
 
 .vert_center
 {
-    position: relative;
-    padding-top: 50%
+    vertical-align: middle;
+    display: inline-block;
 }
