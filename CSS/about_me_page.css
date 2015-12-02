@@ -23,7 +23,7 @@ body {
 
 .vert_center
 {
-	display: inline-block;
-    vertical-align: middle;
-    float: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
