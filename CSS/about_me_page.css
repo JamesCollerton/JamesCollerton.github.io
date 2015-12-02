@@ -23,8 +23,6 @@ body {
 
 .vert_center
 {
-    display:table-cell;
-    vertical-align:middle;
-    text-align:center;
-    float:none;
+    position: absolute;
+    padding-top: 50%
 }
