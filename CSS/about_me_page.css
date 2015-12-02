@@ -23,6 +23,6 @@ body {
 
 .vert_center
 {
-    position: absolute;
+    position: relative;
     padding-top: 50%
 }
