@@ -21,6 +21,12 @@ body {
 	width: 100%
 }
 
+.text_container
+{
+	width: 100%;
+	height: 400px;
+}
+
 .vert_center
 {
     position: relative;
