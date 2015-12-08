@@ -11,6 +11,12 @@
 	text-align: center;
 }
 
+.scrolling_text
+{
+	font-size: 60px;
+	text-align: center;
+}
+
 .about_img
 {
 	width: 100%
