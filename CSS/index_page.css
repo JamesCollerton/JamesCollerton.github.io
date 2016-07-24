@@ -17,6 +17,21 @@ body {
 	font-size: 50px;
 }
 
+.indexPageMainHeader
+{
+	font-size: 50px;
+}
+
+.indexPageSubHeader
+{
+	font-size: 25px;
+}
+
+.indexPageHeader
+{
+	text-align: center; 
+}
+
 .sub_head_font
 {
 	font-size: 25px;
