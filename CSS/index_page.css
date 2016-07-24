@@ -17,23 +17,6 @@ body {
 	font-size: 50px;
 }
 
-.indexPageMainHeader
-{
-	height: 100%;
-	width:100%;
-	font-size: 50px;
-}
-
-.indexPageSubHeader
-{
-	font-size: 25px;
-}
-
-.indexPageHeader
-{
-	text-align: center; 
-}
-
 .sub_head_font
 {
 	font-size: 25px;
@@ -58,4 +41,31 @@ a:hover
 {
 	color: black;
     text-decoration: none;   
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* New CSS */
+
+.indexPageMainHeader
+{
+	font-size: 50px;
+	text-align: center;
+}
+
+.indexPageSubHeader
+{
+	font-size: 25px;
+	text-align: center;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+
+  min-width: 100%
+  min-width: 100vh;
 }
