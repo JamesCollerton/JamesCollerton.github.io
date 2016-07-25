@@ -1,0 +1,37 @@
+/* -------------------------------------------------------------------------- */
+
+/* Landing Page CSS */
+
+/* -------------------------------------------------------------------------- */
+
+/* Moves the icon to the left of the title. */
+.landingPageIcon
+{
+  margin-left: 10px;
+}
+
+/* Formats the main page header to center and size. */
+.landingPageMainHeader
+{
+	font-size: 50px;
+	text-align: center;
+}
+
+/* Formats the main page subheader to center and size. */
+.landingPageSubHeader
+{
+	font-size: 25px;
+	text-align: center;
+}
+
+/* Removes the formatting from the links */
+a {
+  	color: black;
+    text-decoration: none;
+}
+
+a:hover 
+{
+  	color: black;
+    text-decoration: none;   
+}

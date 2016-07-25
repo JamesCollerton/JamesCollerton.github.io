@@ -1,0 +1,50 @@
+/* -------------------------------------------------------------------------- */
+
+/* Index Page CSS */
+
+/* -------------------------------------------------------------------------- */
+
+/* Formats the main page header to center and size. */
+.indexPageMainHeader
+{
+	font-size: 50px;
+	text-align: center;
+}
+
+/* Formats the main page subheader to center and size. */
+.indexPageSubHeader
+{
+	font-size: 25px;
+	text-align: center;
+}
+
+/* Makes the icon so it isn't directly next to text. */
+.indexPageIcon
+{
+	margin-left: 5px;
+}
+
+/* Vertically centers the container in the middle of the page. */
+.verticalCenter 
+{
+  min-height: 100%;  
+  min-height: 100vh; 
+
+  display: flex;
+  align-items: center;
+
+  min-width: 100%
+  min-width: 100vh;
+}
+
+/* Formats the links so they are black and not underlined. */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover 
+{
+    color: black;
+    text-decoration: none;   
+}
