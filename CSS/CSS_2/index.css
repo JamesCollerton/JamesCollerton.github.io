@@ -37,6 +37,38 @@
   min-width: 100vh;
 }
 
+/* Makes the logos the same size. */
+.indexPageLogo
+{
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+/* To format the left and right logos to be centered but spaced */
+.indexPageLogoLeft
+{
+  margin-right: 5px;
+}
+
+.indexPageLogoRight
+{
+  margin-left: 5px;
+}
+
+.indexPageLogoCenter
+{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Aligns the logos centrally and adds top spacing. */
+.indexPageLogoDiv
+{
+  margin-top: 20px;
+  text-align: center;
+}
+
 /* Formats the links so they are black and not underlined. */
 a {
     color: black;
