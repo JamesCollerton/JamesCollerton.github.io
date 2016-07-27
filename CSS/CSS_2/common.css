@@ -22,3 +22,12 @@ body
   min-width: 100%
   min-width: 100vh;
 }
+
+.navbarLogo
+{
+	margin-top: 10px;
+  	margin-right: 10px;
+  	height: 30px;
+  	width: 30px;
+  	cursor: pointer;
+}

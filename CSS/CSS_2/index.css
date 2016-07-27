@@ -62,6 +62,12 @@
   margin-right: 5px;
 }
 
+.indexPageEnter
+{
+  text-align: center;
+  font-size: 20px;
+}
+
 /* Aligns the logos centrally and adds top spacing. */
 .indexPageLogoDiv
 {
