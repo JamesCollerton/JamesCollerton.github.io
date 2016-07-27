@@ -23,6 +23,7 @@ body
   min-width: 100vh;
 }
 
+/* Formats the logo for the navbar */
 .navbarLogo
 {
 	margin-top: 10px;
