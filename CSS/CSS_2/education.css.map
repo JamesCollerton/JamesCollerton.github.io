@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,gFAAgF;AAEhF,oBAAoB;AAEpB,gFAAgF",
+"mappings": "AAAA,gFAAgF;AAEhF,oBAAoB;AAEpB,gFAAgF;AAEhF,sBACA;EACC,aAAa,EAAE,IAAI;;AAGpB,uBACA;EACC,KAAK,EAAE,OAAO;EACd,MAAM,EAAE,OAAO",
 "sources": ["../../SASS/education.scss"],
 "names": [],
 "file": "education.css"

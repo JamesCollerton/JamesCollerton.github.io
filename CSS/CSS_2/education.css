@@ -1,5 +1,11 @@
 /* -------------------------------------------------------------------------- */
 /* Education SASS */
 /* -------------------------------------------------------------------------- */
+.educationPageTextBody {
+  margin-bottom: 50px; }
+
+.educationPageStatsIcon {
+  color: #3399FF;
+  cursor: pointer; }
 
 /*# sourceMappingURL=education.css.map */

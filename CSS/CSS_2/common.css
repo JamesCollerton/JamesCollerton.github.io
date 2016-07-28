@@ -8,7 +8,8 @@
 /* CLASSES */
 /* Makes all of the text the same over the site. */
 body {
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 70px; }
 
 /* Used for vertically centering divs. */
 .verticalCenter {
@@ -27,11 +28,14 @@ body {
   width: 30px;
   cursor: pointer; }
 
+/* Formats the page header for all pages. */
 .pageHeader {
   font-size: 50px; }
 
+/* Formats the blurb for all pages */
 .pageBlurb {
   margin-top: 10px;
+  margin-bottom: 30px;
   font-size: 20px; }
 
 /*# sourceMappingURL=common.css.map */

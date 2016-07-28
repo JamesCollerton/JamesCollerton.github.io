@@ -10,6 +10,13 @@
 
 	<!-- WARNING: D3 JS needs to be linked at the top of the page to work properly. -->
 	<script type="text/javascript" src="D3/d3.v3.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 	<!-- Linked stylesheets -->
 	<link rel="stylesheet" href="CSS/normalize.css"/>
@@ -17,6 +24,7 @@
 	<link rel="stylesheet" href="CSS/whitespace_styles.css"/>
 	<link rel="stylesheet" href="CSS/CSS_2/common.css">
 	<link rel="stylesheet" href="CSS/CSS_2/education.css">
+	<link rel="stylesheet" href="CSS/grade_visualisations_styles.css"/>
 
 	<!-- Google font API for fonts. -->
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -116,7 +124,117 @@
 			<div class = "row">
 
 				<!-- Column to contain the text. -->
-				<div class = "col-md-12">
+				<div class="col-xs-12 col-md-6">
+
+					<div class="panel panel-default educationPageTextBody">
+  						<div class="panel-body">
+
+						<h2>
+							MSc Computer Science
+							<span class="glyphicon glyphicon-stats pull-right educationPageStatsIcon"></span>
+						</h2>
+
+						<p>
+							In my Master's studies I took modules on 
+							Programming in C, Object Oriented
+							Design in Java, Databases, Computer Architecture,
+							Web Technologies and also completed a Group Software Project. I 
+							got to work on some pretty cool stuff,
+							including a couple of computer games, a database engine
+							and designing a processor (more on the 
+
+							<a href = "projects.html">projects</a> 
+
+							page).
+
+							<br/><br/>
+
+							My MSc Thesis was centred on applying Equation Discovery
+							from the field of machine learning to deriving differential
+							equation-based models for ant population dynamics.
+							Although very intense, it was a good opportunity to do some
+							of my own research, and very rewarding.
+						</p>
+
+						</div>
+					</div>
+
+					<div class="panel panel-default educationPageTextBody">
+  						<div class="panel-body">
+
+						<h2>
+							BSc Mathematics
+							<span class="glyphicon glyphicon-stats pull-right educationPageStatsIcon"></span>
+						</h2>
+
+						<p>
+							My Bachelor's was mathematics, which
+							I also studied at the University of
+							Bristol. Having been interested in the
+							area all of the way through my sixth
+							form studies it made sense to progress
+							it into my university career.
+
+							<br/><br/>
+
+							My main focus was statistics, taking 
+							modules in Bayesian modelling, financial
+							mathematics, time series analysis and concepts
+							in probability. My third year project then
+							focussed on denoising signals and developing
+							a new algorithm for detecting EPSCaT signals
+							in the brain.
+
+							<br/><br/>
+
+							Although I enjoyed mathematics I wanted to
+							explore other areas, so moved from the MSci
+							to the BSc, and swapped to Computer Science.
+						</p>
+
+						</div>
+					</div>
+
+					<div class="panel panel-default educationPageTextBody">
+  						<div class="panel-body">
+
+						<h2>
+							A-Level
+							<span class="glyphicon glyphicon-stats pull-right educationPageStatsIcon"></span>
+						</h2>
+
+						<p>
+							I studied at Saint Cuthbert's Catholic 
+							High School, a state school in west end
+							Newcastle, taking A-Levels in Maths, 
+							Further Maths and Chemistry, with the 
+							intention of taking mathematics at university.
+							Throughout my time at school I never encountered
+							the idea of programming, which meant I never
+							considered Computer Science as a potential course 
+							at university. Maybe had I done a bit of
+							coding at A-level things might have turned out
+							different...
+
+							<br/><br/>
+
+							As well as my A-Level exams I took an
+							extra maths course at the University of
+							Durham and competed in the Southampton 
+							University Cypher Challenge. I also went 
+							on a charity trip to Namibia, Africa where 
+							I spent time teaching maths in an orphanage. 
+
+						</p>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-xs-hidden">
+
+					<div id = "d3_graph"></div>
 
 				</div>
 
@@ -166,6 +284,7 @@
 
 	<!-- Custom scripts -->
 	<script src = "JavaScript/bootstrap.js"></script>
+	<script src = "JavaScript/Grade_Visualisations.js"></script>
 
 </body>
 
