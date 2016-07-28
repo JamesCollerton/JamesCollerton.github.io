@@ -1,37 +1,54 @@
 /* -------------------------------------------------------------------------- */
+
 /* Common SASS (Shared over all pages) */
+
 /* -------------------------------------------------------------------------- */
+
 /* -------------------------------------------------------------------------- */
 /* VARIABLES */
+
 /* Navbar variables. */
+$iconLength: 30px;
+
 /* -------------------------------------------------------------------------- */
 /* CLASSES */
+
 /* Makes all of the text the same over the site. */
-body {
-  font-family: 'Oswald', sans-serif; }
+body
+{
+	font-family: 'Oswald', sans-serif;
+}
 
 /* Used for vertically centering divs. */
-.verticalCenter {
-  min-height: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  min-width: 100%;
-  min-width: 100vh; }
+.verticalCenter 
+{
+	min-height: 100%;  
+	min-height: 100vh; 
+
+	display: flex;
+	align-items: center;
+
+	min-width: 100%;
+	min-width: 100vh;
+}
 
 /* Formats the logo for the navbar */
-.navbarLogo {
-  margin-top: 10px;
-  margin-right: 10px;
-  height: 30px;
-  width: 30px;
-  cursor: pointer; }
+.navbarLogo
+{
+	margin-top: 10px;
+	margin-right: 10px;
+	height: $iconLength;
+	width: $iconLength;
+	cursor: pointer;
+}
 
-.pageHeader {
-  font-size: 50px; }
+.pageHeader
+{
+	font-size: 50px;
+}
 
-.pageBlurb {
-  margin-top: 10px;
-  font-size: 20px; }
-
-/*# sourceMappingURL=common.css.map */
+.pageBlurb
+{
+	margin-top: 10px;
+	font-size: 20px;
+}
