@@ -13,6 +13,7 @@
 /* Formats the main page header to center and size. */
 .landingPageMainHeader
 {
+	margin-top: 100px;
 	font-size: 50px;
 	text-align: center;
 }
@@ -22,7 +23,6 @@
 {
 	font-size: 25px;
 	text-align: center;
-	margin-top: 100px;
 	margin-bottom: 100px;
 }
 
