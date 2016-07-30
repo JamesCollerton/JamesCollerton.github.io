@@ -51,6 +51,10 @@ function gradeVisualisations() {
 
 	}
 
+	return {
+		assign_button_listener: assign_button_listener
+	}
+
 }
 
 function d3Graph(){
