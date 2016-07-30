@@ -174,5 +174,5 @@ function d3Graph(){
 	}
 }
 
-var educationGradeVisualisations = gradeVisualisations();
 var educationD3Graph = d3Graph();
+var educationGradeVisualisations = gradeVisualisations();
