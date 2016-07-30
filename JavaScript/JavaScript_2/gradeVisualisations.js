@@ -1,7 +1,7 @@
 // Code to create the visualisations.
 
 function gradeVisualisations() {
-	
+
 // Creates a vector of all the tabs we want to look at.
 var tab_buttons = {
 
@@ -187,3 +187,5 @@ function draw(data) {
 }
 
 }
+
+var educationGradeVisualisations = gradeVisualisations();
