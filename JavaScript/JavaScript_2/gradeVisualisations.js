@@ -11,8 +11,6 @@ function gradeVisualisations() {
 
 	};
 
-	var educationD3Graph = d3Graph();
-
 	// Adds a click listener to each of the buttons. Adds a short delay on the
 	// animation so that the right tab is counted as active.
 	function assign_button_listener(tsv_data){
