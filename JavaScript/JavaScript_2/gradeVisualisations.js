@@ -31,11 +31,7 @@ function gradeVisualisations() {
 	// C
 	function changeGradeVisualisation(data, buttonID){
 
-		console.log(data);
-		console.log(buttonID);
-
-		var slice = educationD3Graph.getData();
-
+		var slice = data;
 
 		switch(buttonID){
 
@@ -43,15 +39,15 @@ function gradeVisualisations() {
 				slice = data.slice(0, 7);
 				break;
 			case sectionButtons["bscSection"]:
-				bsc_slice = data.slice(7, 29);
+				slice = data.slice(7, 29);
 				break;
 			case sectionButtons["aLevelSection"]:
-				bsc_slice = data.slice(29, data.length);
+				slice = data.slice(29, data.length);
 				break;
 
-			educationD3Graph.draw(slice);
-
 		}
+
+		educationD3Graph.draw(slice);
 
 	}
 
