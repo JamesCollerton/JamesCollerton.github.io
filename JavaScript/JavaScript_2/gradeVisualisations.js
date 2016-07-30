@@ -5,9 +5,9 @@ function gradeVisualisations() {
 	// Creates a vector of all the tabs we want to look at.
 	var sectionButtons = {
 
-		mscSection : $("#educationPageMScIcon"),
-		bscSection : $("#educationPageBScIcon"),
-		aLevelSection : $("#educationPageALevelIcon")
+		mscSection : "educationPageMScIcon",
+		bscSection : "educationPageBScIcon",
+		aLevelSection : "educationPageALevelIcon"
 
 	};
 
@@ -17,7 +17,7 @@ function gradeVisualisations() {
 
 		for(button in sectionButtons){
 
-			sectionButtons[button].click( function(){
+			$("#" + sectionButtons[button]).click( function(){
 
 				var buttonID = $(this).attr('id');
 				changeGradeVisualisation(tsv_data, buttonID);
