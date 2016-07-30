@@ -29,6 +29,8 @@ function gradeVisualisations() {
 
 		}
 
+		changeButtonCSS(sectionButtons[0]);
+
 	}
 
 	function changeButtonCSS(buttonID){
