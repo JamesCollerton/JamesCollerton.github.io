@@ -2,47 +2,47 @@
 
 function gradeVisualisations() {
 
-// Creates a vector of all the tabs we want to look at.
-var tab_buttons = {
+	// Creates a vector of all the tabs we want to look at.
+	var sectionButtons = {
 
-	comp_sci_tab : document.getElementById("comp_sci_tab"),
-	math_tab : document.getElementById("math_tab"),
-	a_level_tab : document.getElementById("a_level_tab")
+		mscSection : $("educationPageMScIcon"),
+		bscSection : $("educationPageBScIcon"),
+		aLevelSection : $("educationPageALevelIcon")
 
-};
+	};
 
-// Adds a click listener to each of the buttons. Adds a short delay on the
-// animation so that the right tab is counted as active.
-function assign_button_listener(tsv_data){
+	// Adds a click listener to each of the buttons. Adds a short delay on the
+	// animation so that the right tab is counted as active.
+	function assign_button_listener(tsv_data){
 
-	for(button in tab_buttons){ 
-		tab_buttons[button].addEventListener( 
-					'click', 
-					 function(){
+		for(button in sectionButtons){ 
+			sectionButtons[button].addEventListener( 
+						'click', 
+						 function(){
 
-						setTimeout(function(){
+							setTimeout(function(){
 
-							run_checks(tsv_data);
+								run_checks(tsv_data);
 
-						 }, 100); 
+							 }, 100); 
 
-					 }, false 
-	);
+						 }, false 
+		);
+		}
+
 	}
-
-}
 
 // Runs checks when a button is clicked and sees which one is active, then
 // passes the argument to the button check
 function run_checks(data){
 
-	if(tab_buttons['comp_sci_tab'].className == 'active'){ 
+	if(sectionButtons['comp_sci_tab'].className == 'active'){ 
 		button_check('comp_sci_tab', data); 
 	}
-	else if(tab_buttons['math_tab'].className == 'active'){ 
+	else if(sectionButtons['math_tab'].className == 'active'){ 
 		button_check('math_tab', data); 
 	}
-	else if(tab_buttons['a_level_tab'].className == 'active'){
+	else if(sectionButtons['a_level_tab'].className == 'active'){
 		button_check('a_level_tab', data);
 	}
 }
