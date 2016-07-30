@@ -33,7 +33,8 @@ function gradeVisualisations() {
 
 		switch(buttonID){
 
-			var slice = data;
+			// var slice = data;
+			var slice = educationD3Graph.getData();
 
 			case sectionButtons["mscSection"]:
 				slice = data.slice(0, 7);
@@ -58,6 +59,8 @@ function gradeVisualisations() {
 }
 
 function d3Graph(){
+
+	var d3GraphData = [];
 
 	// Mike Bostock "margin conventions"
 	var margin = {top: 20, right: 20, bottom: 70, left: 40},
@@ -110,10 +113,10 @@ function d3Graph(){
 	// d3.tsv is a wrapper around XMLHTTPRequest, returns array of arrays (?) for a TSV file
 	// type function transforms strings to numbers, dates, etc.
 	d3.tsv("Data/data.tsv", type, function(error, data) {
+		d3GraphData = data;
 		msc_slice = data.slice(0, 7)
 		draw(msc_slice)
 		educationGradeVisualisations.assign_button_listener(data)
-		// console.log(data);
 	});
 
 	function type(d) {
@@ -174,8 +177,13 @@ function d3Graph(){
 
 	}
 
+	function getData(){
+		return d3GraphData;
+	}
+
 	return{
-		draw: draw
+		draw: draw,
+		getData: getData
 	}
 }
 
