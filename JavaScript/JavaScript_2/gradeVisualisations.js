@@ -31,23 +31,23 @@ function gradeVisualisations() {
 	// C
 	function changeGradeVisualisation(data, buttonID){
 
-		switch(buttonID){
+		// switch(buttonID){
 
-			var slice = data;
+		// 	var slice = data;
 
-			case sectionButtons["mscSection"]:
-				slice = data.slice(0, 7);
-				break;
-			case sectionButtons["bscSection"]:
-				bsc_slice = data.slice(7, 29);
-				break;
-			case sectionButtons["aLevelSection"]:
-				bsc_slice = data.slice(29, data.length);
-				break;
+		// 	case sectionButtons["mscSection"]:
+		// 		slice = data.slice(0, 7);
+		// 		break;
+		// 	case sectionButtons["bscSection"]:
+		// 		bsc_slice = data.slice(7, 29);
+		// 		break;
+		// 	case sectionButtons["aLevelSection"]:
+		// 		bsc_slice = data.slice(29, data.length);
+		// 		break;
 
-			educationD3Graph.draw(slice);
+		// 	educationD3Graph.draw(slice);
 
-		}
+		// }
 
 	}
 
@@ -109,6 +109,7 @@ function d3Graph(){
 		msc_slice = data.slice(0, 7)
 		draw(msc_slice)
 		educationGradeVisualisations.assign_button_listener(data)
+		console.log(data);
 	});
 
 	function type(d) {
