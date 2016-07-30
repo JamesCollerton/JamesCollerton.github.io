@@ -114,12 +114,12 @@ function gradeVisualisations() {
 
 		// d3.tsv is a wrapper around XMLHTTPRequest, returns array of arrays (?) for a TSV file
 		// type function transforms strings to numbers, dates, etc.
-		d3.tsv("Data/data.tsv", type, function(error, data) {
-			console.log(data);
-			msc_slice = data.slice(0, 7)
-			draw(msc_slice)
-			assign_button_listener(data)
-		});
+		// d3.tsv("Data/data.tsv", type, function(error, data) {
+		// 	console.log(data);
+		// 	msc_slice = data.slice(0, 7)
+		// 	draw(msc_slice)
+		// 	assign_button_listener(data)
+		// });
 
 		function type(d) {
 			// + coerces to a Number from a String (or anything)
