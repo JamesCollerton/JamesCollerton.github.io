@@ -33,6 +33,8 @@ function gradeVisualisations() {
 
 		switch(buttonID){
 
+			if( typeof data == "undefined" ){ console.log("data"); }
+			if( typeof buttonID == "undefined" ){ console.log("data"); }
 			// var slice = data;
 			var slice = educationD3Graph.getData();
 
