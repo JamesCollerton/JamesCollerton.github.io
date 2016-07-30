@@ -5,9 +5,9 @@ function gradeVisualisations() {
 	// Creates a vector of all the tabs we want to look at.
 	var sectionButtons = {
 
-		mscSection : $("educationPageMScIcon"),
-		bscSection : $("educationPageBScIcon"),
-		aLevelSection : $("educationPageALevelIcon")
+		mscSection : $("#educationPageMScIcon"),
+		bscSection : $("#educationPageBScIcon"),
+		aLevelSection : $("#educationPageALevelIcon")
 
 	};
 
@@ -15,13 +15,15 @@ function gradeVisualisations() {
 	// animation so that the right tab is counted as active.
 	function assign_button_listener(tsv_data){
 
-		for(button in sectionButtons){ 
-			$("#" + sectionButtons[button]).click( function(){
+		for(button in sectionButtons){
+
+			sectionButtons[button].click( function(){
 
 				var buttonID = $(this).attr('id');
 				changeGradeVisualisation(tsv_data, buttonID);
 
 			});
+
 		}
 
 	}
