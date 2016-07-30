@@ -33,60 +33,48 @@ function gradeVisualisations() {
 
 		switch(buttonID){
 
+			var slice = data;
+
 			case sectionButtons["mscSection"]:
-				button_check('comp_sci_tab', data); 
+				slice = data.slice(0, 7);
 				break;
 			case sectionButtons["bscSection"]:
-				button_check('math_tab', data); 
+				bsc_slice = data.slice(7, 29);
 				break;
 			case sectionButtons["aLevelSection"]:
-				button_check('a_level_tab', data);
+				bsc_slice = data.slice(29, data.length);
 				break;
 
-		}
+			draw(slice);
 
-	}
-
-	// Runs checks when a button is clicked and sees which one is active, then
-	// passes the argument to the button check
-	function run_checks(data){
-
-		if(sectionButtons['comp_sci_tab'].className == 'active'){ 
-			button_check('comp_sci_tab', data); 
-		}
-		else if(sectionButtons['math_tab'].className == 'active'){ 
-			button_check('math_tab', data); 
-		}
-		else if(sectionButtons['a_level_tab'].className == 'active'){
-			button_check('a_level_tab', data);
 		}
 
 	}
 
 	// Depending on the button type it selects a different part of the data and
 	// displays it to the screen.
-	function button_check(button, data){
+	// function button_check(button, data){
 
-		if(button == 'comp_sci_tab'){
+	// 	if(button == 'comp_sci_tab'){
 
-			msc_slice = data.slice(0, 7)
-			draw(msc_slice)
+	// 		msc_slice = data.slice(0, 7)
+	// 		draw(msc_slice)
 
-		}
-		else if(button == 'math_tab'){
+	// 	}
+	// 	else if(button == 'math_tab'){
 
-			bsc_slice = data.slice(7, 29)
-			draw(bsc_slice)
+	// 		bsc_slice = data.slice(7, 29)
+	// 		draw(bsc_slice)
 
-		}
-		else if(button == 'a_level_tab'){
+	// 	}
+	// 	else if(button == 'a_level_tab'){
 
-			bsc_slice = data.slice(29, data.length)
-			draw(bsc_slice)
+	// 		bsc_slice = data.slice(29, data.length)
+	// 		draw(bsc_slice)
 
-		}
+	// 	}
 
-	 }
+	//  }
 
 // Mike Bostock "margin conventions"
 var margin = {top: 20, right: 20, bottom: 70, left: 40},
