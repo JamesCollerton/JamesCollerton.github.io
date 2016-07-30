@@ -34,12 +34,10 @@ function gradeVisualisations() {
 		console.log(data);
 		console.log(buttonID);
 
-		switch(buttonID){
+		var slice = educationD3Graph.getData();
 
-			if( typeof data == "undefined" ){ console.log("data"); }
-			if( typeof buttonID == "undefined" ){ console.log("data"); }
-			// var slice = data;
-			var slice = educationD3Graph.getData();
+
+		switch(buttonID){
 
 			case sectionButtons["mscSection"]:
 				slice = data.slice(0, 7);
