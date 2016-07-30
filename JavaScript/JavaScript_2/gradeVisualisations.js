@@ -32,13 +32,13 @@ function gradeVisualisations() {
 
 		switch(buttonID){
 
-			case sectionButtons[mscSection]:
+			case sectionButtons["mscSection"]:
 				button_check('comp_sci_tab', data); 
 				break;
-			case sectionButtons[mscSection]:
+			case sectionButtons["bscSection"]:
 				button_check('math_tab', data); 
 				break;
-			case sectionButtons[mscSection]:
+			case sectionButtons["aLevelSection"]:
 				button_check('a_level_tab', data);
 				break;
 
