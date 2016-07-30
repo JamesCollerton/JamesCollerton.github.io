@@ -28,6 +28,7 @@ function gradeVisualisations() {
 
 	}
 
+	// C
 	function changeGradeVisualisation(data, buttonID){
 
 		switch(buttonID){
