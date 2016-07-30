@@ -31,10 +31,9 @@ function gradeVisualisations() {
 	// C
 	function changeGradeVisualisation(data, buttonID){
 
+		console.log(data);
+		console.log(buttonID);
 
-		if( typeof data == "undefined" ){ console.log("data"); }
-		if( typeof buttonID == "undefined" ){ console.log("data"); }
-		
 		switch(buttonID){
 
 			if( typeof data == "undefined" ){ console.log("data"); }
