@@ -29,7 +29,7 @@ function gradeVisualisations() {
 
 		}
 
-		changeButtonCSS(sectionButtons[0]);
+		changeButtonCSS(sectionButtons["mscSection"]);
 
 	}
 
