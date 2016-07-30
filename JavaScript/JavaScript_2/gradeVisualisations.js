@@ -16,7 +16,7 @@ function gradeVisualisations() {
 	function assign_button_listener(tsv_data){
 
 		for(button in sectionButtons){ 
-			sectionButtons[button].click( function(){
+			$("#" + sectionButtons[button]).click( function(){
 
 				var buttonID = $(this).attr('id');
 				changeGradeVisualisation(tsv_data, buttonID);
