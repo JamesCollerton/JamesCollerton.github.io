@@ -5,7 +5,10 @@
   margin-bottom: 50px; }
 
 .educationPageStatsIcon {
-  color: #3399FF;
+  color: steelblue;
   cursor: pointer; }
+
+.educationPageStatsIconActive {
+  color: brown; }
 
 /*# sourceMappingURL=education.css.map */

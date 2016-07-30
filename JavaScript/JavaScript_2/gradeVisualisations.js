@@ -2,6 +2,8 @@
 
 function gradeVisualisations() {
 
+	var previousButtonID = "";
+
 	// Creates a vector of all the tabs we want to look at.
 	var sectionButtons = {
 
@@ -21,10 +23,23 @@ function gradeVisualisations() {
 
 				var buttonID = $(this).attr('id');
 				changeGradeVisualisation(tsv_data, buttonID);
+				changeButtonCSS(buttonID);
 
 			});
 
 		}
+
+	}
+
+	function changeButtonCSS(buttonID){
+
+		if(previousButtonID !== ""){ 
+			$("#" + previousButtonID).removeClass("educationPageStatsIconActive");
+		}
+
+		$("#" + buttonID).addClass("educationPageStatsIconActive");
+
+		previousButtonID = buttonID;
 
 	}
 
