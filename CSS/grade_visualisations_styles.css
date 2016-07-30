@@ -20,3 +20,8 @@
 .x.axis path {
   display: none;
 }
+
+.d3GraphContainer
+{
+	margin-top: 100px;	
+}
