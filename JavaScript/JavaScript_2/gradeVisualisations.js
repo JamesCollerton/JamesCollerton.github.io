@@ -143,7 +143,7 @@ function d3Graph(){
 	*/
 	var margin = {top: 20, right: 20, bottom: 70, left: 40},
 				  width = $("#d3GraphPanelBody").width() - margin.left - margin.right,
-				  height = 400 - margin.top - margin.bottom;
+				  height = window.innerHeight - $("#d3GraphPanelBody").offsetTop - margin.top - margin.bottom;
 
 	/**
 
