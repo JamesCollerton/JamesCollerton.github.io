@@ -11,9 +11,10 @@
 .educationPageStatsIconActive {
   color: brown; }
 
-/*.educationPageD3GraphPanelBody
-{
-	position: fixed;
-}*/
+.sidebar-outer {
+  position: relative; }
+
+.fixed {
+  position: fixed; }
 
 /*# sourceMappingURL=education.css.map */
