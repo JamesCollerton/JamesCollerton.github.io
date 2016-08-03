@@ -132,7 +132,7 @@ function gradeVisualisations() {
 @classdesc Holds all of the information around the actual d3 graph.
 
 */
-function d3Graph(){
+function d3Graph(d3GraphID){
 
 	/**
 
@@ -182,7 +182,7 @@ function d3Graph(){
 	group. Then adds the x and y axes with some labelling.
 
 	*/
-	var svg = d3.select(".d3_graph").append("svg")
+	var svg = d3.select("#" + d3GraphID).append("svg")
 					.attr("width", width + margin.left + margin.right)
 					.attr("height", height + margin.top + margin.bottom)
 					.append("g")
@@ -299,4 +299,4 @@ function d3Graph(){
 
 // Initialising closures.
 var educationGradeVisualisations = gradeVisualisations();
-var educationD3Graph = d3Graph();
+var educationD3Graph = d3Graph("d3_graph");
