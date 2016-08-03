@@ -143,7 +143,7 @@ function d3Graph(d3GraphID){
 
 	*/
 	var margin = {top: 20, right: 20, bottom: 70, left: 40},
-				  width = $("#d3GraphPanelBody").width() - margin.left - margin.right,
+				  width = $("#" + d3GraphID + "PanelBody").width() - margin.left - margin.right,
 				  height = 300 - margin.top - margin.bottom;
 
 	/**
@@ -300,5 +300,5 @@ function d3Graph(d3GraphID){
 
 // Initialising closures.
 var educationGradeVisualisations = gradeVisualisations();
-var educationD3GraphOne = d3Graph("d3_graph_one");
-var educationD3GraphTwo = d3Graph("d3_graph_two");
+var educationD3GraphOne = d3Graph("d3GraphOne");
+var educationD3GraphTwo = d3Graph("d3GraphTwo");
