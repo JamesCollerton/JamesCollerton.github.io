@@ -144,7 +144,7 @@ function d3Graph(d3GraphID){
 	*/
 	var margin = {top: 20, right: 20, bottom: 70, left: 40},
 				  width = $("#" + d3GraphID + "PanelBody").width() - margin.left - margin.right,
-				  height = 300 - margin.top - margin.bottom;
+				  height = 150 - margin.top - margin.bottom;
 
 	/**
 
