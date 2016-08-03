@@ -182,7 +182,7 @@ function d3Graph(){
 	group. Then adds the x and y axes with some labelling.
 
 	*/
-	var svg = d3.select("#d3_graph").append("svg")
+	var svg = d3.select(".d3_graph").append("svg")
 					.attr("width", width + margin.left + margin.right)
 					.attr("height", height + margin.top + margin.bottom)
 					.append("g")
