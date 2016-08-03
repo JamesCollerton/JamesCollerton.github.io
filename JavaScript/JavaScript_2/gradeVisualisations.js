@@ -114,7 +114,8 @@ function gradeVisualisations() {
 
 		}
 
-		educationD3Graph.draw(slice);
+		educationD3GraphOne.draw(slice);
+		educationD3GraphTwo.draw(slice);
 
 	}
 
@@ -299,4 +300,5 @@ function d3Graph(d3GraphID){
 
 // Initialising closures.
 var educationGradeVisualisations = gradeVisualisations();
-var educationD3Graph = d3Graph("d3_graph");
+var educationD3GraphOne = d3Graph("d3_graph_one");
+var educationD3GraphTwo = d3Graph("d3_graph_two");
