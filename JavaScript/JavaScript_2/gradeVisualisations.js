@@ -232,10 +232,7 @@ function d3Graph(d3GraphID){
 		if(d3GraphID === "d3GraphTwo"){ return 250; }
 
 		var distanceFromTop = $("#" + d3GraphID).offset().top;
-		var heightOfDocument = $(window).height();
-
-		console.log(distanceFromTop);
-		console.log(heightOfDocument);
+		var heightOfDocument = $(window).height() - 100;
 
 		var heightOfElement = heightOfDocument - (distanceFromTop * 2); 
 
