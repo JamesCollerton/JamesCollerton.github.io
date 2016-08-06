@@ -231,11 +231,12 @@ function d3Graph(d3GraphID){
 
 		if(d3GraphID === "d3GraphTwo"){ return 250; }
 
-		$("#" + d3GraphID).offset().top;
+		var distanceFromTop = $("#" + d3GraphID).offset().top;
+		var heightOfDocument = $(document).height();
 
-		console.log($("#" + d3GraphID).offset());
+		var heightOfElement = heightOfDocument - (distanceFromTop * 2); 
 
-		return 200;
+		return heightOfElement;
 
 	}
 
