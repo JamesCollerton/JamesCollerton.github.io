@@ -18,7 +18,7 @@ body {
   display: flex;
   align-items: center;
   min-width: 100%;
-  min-width: 100vh; }
+  /*min-width: 100vh;*/ }
 
 /* Formats the logo for the navbar */
 .navbarLogo {
