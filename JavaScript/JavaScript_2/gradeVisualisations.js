@@ -199,8 +199,8 @@ function d3Graph(d3GraphID){
 			.attr("transform", "rotate(-90)")
 			.attr("y", 6)
 			.attr("dy", ".71em")
-			.style("text-anchor", "end")
-			.text("Percentage");
+			.style("text-anchor", "end");
+			// .text("Percentage");
 
 	/**
 
