@@ -144,7 +144,7 @@ function d3Graph(d3GraphID){
 	*/
 	var margin = {top: 20, right: 20, bottom: 70, left: 40},
 				  width = $("#" + d3GraphID + "PanelBody").width() - margin.left - margin.right,
-				  height = 250 - margin.top - margin.bottom;
+				  height = calculateHeight() - margin.top - margin.bottom;
 
 	/**
 
@@ -220,9 +220,28 @@ function d3Graph(d3GraphID){
 	/**
 
 	@memberof d3Graph
-	@inner svg
-	@description This is the SVG element, sets the width, height and adds a 
-	group. Then adds the x and y axes with some labelling.
+	
+	@function calculateHeight
+
+	@description This is used to calculate how large we want the graph to
+	be on the page to be rendered correctly.
+
+	*/
+	function calculateHeight(){
+
+		return 200;
+
+	}
+
+	/**
+
+	@memberof d3Graph
+	
+	@function type
+
+	@description This is used to increment the frequency of an amount.
+
+	@returns a d object with the frequency incremented.
 
 	*/
 	function type(d) {
@@ -231,6 +250,8 @@ function d3Graph(d3GraphID){
 	}
 
 	/**
+
+	@memberof d3Graph
 
 	@function assignButtonListeners
 
