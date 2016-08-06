@@ -144,7 +144,7 @@ function d3Graph(d3GraphID){
 	*/
 	var margin = {top: 20, right: 20, bottom: 70, left: 40},
 				  width = $("#" + d3GraphID + "PanelBody").width() - margin.left - margin.right,
-				  height = calculateHeight() - margin.top - margin.bottom;
+				  height = calculateHeight(d3GraphID) - margin.top - margin.bottom;
 
 	/**
 
@@ -227,7 +227,13 @@ function d3Graph(d3GraphID){
 	be on the page to be rendered correctly.
 
 	*/
-	function calculateHeight(){
+	function calculateHeight(d3GraphID){
+
+		if(d3GraphID === "d3GraphTwo"){ return 250; }
+
+		$("#" + d3GraphID).offset().top;
+
+		console.log($("#" + d3GraphID).offset());
 
 		return 200;
 
