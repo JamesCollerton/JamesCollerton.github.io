@@ -234,6 +234,9 @@ function d3Graph(d3GraphID){
 		var distanceFromTop = $("#" + d3GraphID).offset().top;
 		var heightOfDocument = $(window).height();
 
+		console.log(distanceFromTop);
+		console.log(heightOfDocument);
+
 		var heightOfElement = heightOfDocument - (distanceFromTop * 2); 
 
 		return heightOfElement;
