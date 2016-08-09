@@ -17,8 +17,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  min-width: 100%;
-  /*min-width: 100vh;*/ }
+  min-width: 100%; }
 
 /* Formats the logo for the navbar */
 .navbarLogo {
@@ -37,5 +36,8 @@ body {
   margin-top: 10px;
   margin-bottom: 30px;
   font-size: 20px; }
+
+.navbarIcon {
+  margin-right: 7px; }
 
 /*# sourceMappingURL=common.css.map */
