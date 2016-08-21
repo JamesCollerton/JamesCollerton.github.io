@@ -23,8 +23,7 @@
 	<link rel="stylesheet" href="CSS/bootstrap.css"/>
 	<link rel="stylesheet" href="CSS/whitespace_styles.css"/>
 	<link rel="stylesheet" href="CSS/CSS_2/common.css">
-	<link rel="stylesheet" href="CSS/CSS_2/education.css">
-	<link rel="stylesheet" href="CSS/grade_visualisations_styles.css"/>
+	<link rel="stylesheet" href="CSS/CSS_2/projects.css">
 
 	<!-- Google font API for fonts. -->
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -139,25 +138,217 @@
 		<!-- Nav tabs -->
 		<ul class="nav nav-tabs" role="tablist">
 
-			<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-			<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+			<li role="presentation" class="active">
+				<a href="#internetFridgeAPI" aria-controls="internetFridgeAPI" role="tab" data-toggle="tab">
+					Internet Fridge API
+				</a>
+			</li>
 
-			<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+			<li role="presentation">
+				<a href="#gravity" aria-controls="gravity" role="tab" data-toggle="tab">
+					Gravity
+				</a>
+			</li>
 
-			<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+			<li role="presentation">
+				<a href="#turtleGraphics" aria-controls="turtleGraphics" role="tab" data-toggle="tab">
+					Turtle Graphics
+				</a>
+			</li>
+
+			<li role="presentation">
+				<a href="#recursiveMazeSolver" aria-controls="recursiveMazeSolver" role="tab" data-toggle="tab">
+					Recursive Maze Solver
+				</a>
+			</li>
 
 		</ul>
 
 		<!-- Tab panes -->
 		<div class="tab-content">
 
-			<div role="tabpanel" class="tab-pane active" id="home">Home</div>
+			<div role="tabpanel" class="tab-pane active" id="internetFridgeAPI">
 
-			<div role="tabpanel" class="tab-pane" id="profile">Profile</div>
+				<div class="tabContainer">
 
-			<div role="tabpanel" class="tab-pane" id="messages">Messages</div>
+					<!-- Container for the page. -->
+					<div class = "container">
 
-			<div role="tabpanel" class="tab-pane" id="settings">Settings</div>
+						<div class = "row">
+
+							<!-- First column containing all of the blurb. -->
+							<div class = "col-md-6">
+
+								<h1 class = "drop_down_title">
+
+									Internet Fridge API.
+
+								</h1>
+
+							</div>
+
+							<!-- Second column containing the video. -->
+							<div class = "col-md-6">
+
+							</div>
+
+						</div>
+
+						<div class = "row">
+
+							<div class = "create_ws_ten"></div>
+
+							<!-- First column containing all of the blurb. -->
+							<div class = "col-md-5">
+
+								<p>
+
+									This wasn't one of the biggest courseworks I did and wasn't
+									actually worth that much for the course. It
+									was definitely one of the ones I enjoyed the most though! It comprised 
+									of designing an API for a fridge that connects to the internet
+									using a Python binding for SQLite.
+
+									</br></br>
+
+									There were a couple of main areas of focus for the project: 
+									database design and creativity. Database design looked at following
+									the correct normalisation principles in creating relational databases,
+									getting to the correct normal form etc. Creativity was about what features
+									you could get into the API, and what you thought would make a cool
+									fridge.
+
+									</br></br>
+
+									This was definitely a case of one of those projects that developed
+									through the "Yeah, but wouldn't it be cool if it... " mentality. 
+									By the end the API could email you things that had just gone out
+									of date, look up products by their barcode on an internet database,
+									recommend you recipes based on what you had in the fridge and even
+									connect to Facebook to automatically post statuses about what you
+									were eating (handy for a lot of people I know...).
+
+								</p>
+
+							</div>
+
+							<!-- Adding a bit of space between text and video -->
+							<div class = "col-md-1"></div>
+
+							<!-- Second column containing the video. -->
+							<div class = "col-md-6">
+
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/mH5nhLyiRDc" frameborder="0" allowfullscreen></iframe>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div role="tabpanel" class="tab-pane" id="gravity">
+
+				<div class="tabContainer">
+				
+					<div class = "container">
+
+						<div class = "row">
+
+							<!-- First column containing all of the blurb. -->
+							<div class = "col-md-6">
+
+								<h1 class = "drop_down_title">
+
+									Gravity.
+
+								</h1>
+
+							</div>
+
+							<!-- Second column containing the video. -->
+							<div class = "col-md-6">
+
+							</div>
+
+						</div>
+
+						<div class = "row">
+
+							<div class = "create_ws_ten"></div>
+
+							<!-- First column containing all of the blurb. -->
+							<div class = "col-md-5">
+
+								<p>
+
+									Gravity was a game designed for a piece of Java programming
+									coursework. It uses Swing graphics and one of the Java audio
+									libraries to create a fun (ish) game where you play a little
+									ball that jumps over obstacles as they come onto screen. There's
+									powerups as well which is obviously insanely exciting. A massive
+									thanks also goes to <a href = "http://rupertcole.co.uk/">Rupert Cole
+									</a> who offered his incredible talent to do the soundtrack and FX
+									for the game which, in my opinion, is what makes the game complete.
+
+									</br></br>
+
+									Some things to note about it are that the ball is animated under
+									gravity, the need for threading and the OO design. The ball can
+									switch between travelling along the top of the screen and the bottom,
+									and the idea was to try and program that cleverly enough to add
+									an extra dimension to the game, with minimal work.
+
+									</br></br>
+
+									Something I really wanted to try and take away from this project
+									was the use of threading in programs. I had previously done some
+									programming in C, so was used to a very procedural way of thinking,
+									not a lot of things happening concurrently. Marrying into that is
+									the concept of Object Orientated design, so thinking about classes
+									having responsibilities rather than breaking a program down
+									into linear steps.
+
+								</p>
+
+							</div>
+
+							<!-- Adding a bit of space between text and video -->
+							<div class = "col-md-1"></div>
+
+							<!-- Third column containing the video. -->
+							<div class = "col-md-6">
+
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/3v0iFeR8wNk" frameborder="0" allowfullscreen></iframe>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div role="tabpanel" class="tab-pane" id="turtleGraphics">
+
+				<div class="tabContainer">
+				
+				</div>
+
+			</div>
+
+			<div role="tabpanel" class="tab-pane" id="recursiveMazeSolver">
+
+				<div class="tabContainer">
+				
+				</div>
+
+			</div>
 
 		</div>
 
