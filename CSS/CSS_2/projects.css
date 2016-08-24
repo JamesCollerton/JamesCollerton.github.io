@@ -4,7 +4,14 @@
 /* -------------------------------------------------------------------------- */
 /* VARIABLES */
 /* -------------------------------------------------------------------------- */
+/* Adds a gap between the tab and the contents of the tab. */
 .tabContainer {
-  margin-top: 30px; }
+  margin-top: 40px; }
+
+/* Styles all the YouTube iFrames */
+.projectsIFrame {
+  position: relative;
+  height: 350px;
+  width: 100%; }
 
 /*# sourceMappingURL=projects.css.map */
