@@ -23,3 +23,26 @@ a:hover
 {
 	margin-top: 40px;
 }
+
+.aboutIcon
+{
+	margin-right: 15px;
+}
+
+.aboutCarouselImage 
+{
+  width: auto;
+  height: 300px;
+  max-height: 300px;
+}
+
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+}
+
+.carousel-inner {
+    border: 10px;
+    border-color: #222;
+    border-style: solid;
+}

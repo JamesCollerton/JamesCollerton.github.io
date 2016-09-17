@@ -14,8 +14,4 @@
   height: 350px;
   width: 100%; }
 
-/* Overrides the vertical center for the projects to include the toolbars */
-.projectsVerticalCenter {
-  min-height: 80vh !important; }
-
 /*# sourceMappingURL=projects.css.map */

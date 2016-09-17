@@ -56,7 +56,14 @@ body
 	font-size: 20px;
 }
 
+/* Distance of icons in menu bar from text. */
 .navbarIcon
 {
 	margin-right: 7px;
+}
+
+/* This centers main pages on the screen accounting for navbar. */
+.mainPageVerticalCenter
+{
+	min-height: 80vh !important;
 }
