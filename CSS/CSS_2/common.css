@@ -45,4 +45,9 @@ body {
 .mainPageVerticalCenter {
   min-height: 80vh !important; }
 
+/* Vertically centers text in a column. */
+.verticalCenterColumn {
+  display: flex;
+  align-items: center; }
+
 /*# sourceMappingURL=common.css.map */
