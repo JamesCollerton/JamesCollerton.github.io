@@ -9,9 +9,9 @@
 
 /* -------------------------------------------------------------------------- */
 
-a:hover
+a:hover, a:visited, a:link, a:active
 {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .aboutPageHeading
@@ -45,4 +45,9 @@ a:hover
     border: 10px;
     border-color: #222;
     border-style: solid;
+}
+
+.carouselMobileSpacing
+{
+	margin-top: 30px;
 }
