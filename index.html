@@ -8,16 +8,14 @@
 	<!-- NOTE: JS script links are contained at the bottom of the page for
 	faster loading. -->
 
+	<!-- Online linked stylesheets. -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
 	<!-- Linked stylesheets -->
 	<link rel="stylesheet" href="CSS/normalize.css"/>
 	<link rel="stylesheet" href="CSS/bootstrap.css"/>
-	<link rel="stylesheet" href="CSS/index_page.css"/>
-	<link rel="stylesheet" href="CSS/fade_functions.css"/>
-	<link rel="stylesheet" href="CSS/text_on_img.css"/>
-	<link rel="stylesheet" href="CSS/whitespace_styles.css"/>
-	<link rel="stylesheet" href="CSS/animate.css">
-	<link rel="stylesheet" href="CSS/default_styles.css"/>
-	<!-- Note the first one is to normalize the css across browsers. -->
+	<link rel="stylesheet" href="CSS/CSS_2/index.css"/>
+	<link rel="stylesheet" href="CSS/CSS_2/common.css"/>
 
 	<!-- Google font API for fonts. -->
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -42,8 +40,10 @@
     <![endif]-->    
 
     <meta prefix="og: http://ogp.me/ns#" property="og:title" content="James Collerton Website" />
-	<meta prefix="og: http://ogp.me/ns#" property="og:description" content="A site I made in HTML5, CSS3 and 	
-																			JavaScript. Come have a look at some of the projects I've worked on over the last few years and what I did at uni!" />
+
+	<meta prefix="og: http://ogp.me/ns#" property="og:description" content="My personal website made 
+	to display some of the projects I've previously worked on." />
+
 	<meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://s30.postimg.org/9zzj5jrxd/web_front_page.jpg" />
 	<meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://jamescollerton.github.io/" />
 
@@ -60,35 +60,40 @@
 	<!-- //////////////////// MAIN PAGE DEFINITION ////////////////////////// -->
 	<!-- //////////////////////////////////////////////////////////////////// -->
 
+	<!-- Vertical center centers the text in the vertical center of page. -->
+	<div class = "container verticalCenter">
 
-		<div class = "container">
+		<!-- Centered form centers the text in the middle of the page. -->
+		<div class = "row centered-form center-block">
 
-		<div class = "row">
+			<!-- Header -->
+			<h1 class="indexPageMainHeader">James Collerton</h1>
 
-			<!-- All columns are of width 6 so they are equal. -->
-			<div class = "col-md-6">
-
+			<!-- Link to next page and software engineer subsection. -->
+			<div class="indexPageSubHeader">
+				Software Engineer
 			</div>
 
-			<!-- All columns are of width 6 so they are equal. -->
-			<div class = "col-md-6">
+			<hr></hr>
 
-				<div class = "create_ws_35_percent"></div>
+			<div class="indexPageEnter">
+				<a href="landingPage_2.html">
+					Enter
+				</a>
+			</div>
 
-				<div class="wow bounceInUp" data-wow-duration="2s" data-wow-delay="1.5s">
+			<hr></hr>
 
-					<h1 class="main_head_font">James Collerton</h1>
-
-					<p class="sub_head_font">Mathematician | Computer Scientist</p>
-
-					<a href="landing_page.html">
-
-						<p class="enter_font">Enter</p>
-
-					</a>
-
-                </div>
-
+			<div class="indexPageLogoDiv">
+				<a href="https://github.com/JamesCollerton">
+					<img src="Images/Images_2/Index/github.png" class="indexPageLogo indexPageLogoLeft">
+				</a>
+				<a href="http://stackoverflow.com/users/4733169/jcollerton">
+					<img src="Images/Images_2/Index/stackoverflow.png" class="indexPageLogo indexPageLogoCenter">
+				</a>
+				<a href="https://www.linkedin.com/in/jamescollerton">
+					<img src="Images/Images_2/Index/linkedin.png" class="indexPageLogo indexPageLogoRight">
+				</a>
 			</div>
 
 		</div> <!-- End of row. -->
@@ -104,12 +109,6 @@
 		 Note: JQuery may not run on SAFE because of needing to access that library. -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-	<!-- Custom scripts -->
-	<script src="bower_components/wow/dist/wow.min.js"></script>
-  	<script>
-  		new WOW().init();
-    </script>
 
 </body>
 
