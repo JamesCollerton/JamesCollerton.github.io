@@ -11,3 +11,14 @@
 	the app.
  */
 angular.module('cryptoTrackerApp', [])
+
+/*
+	@ngdoc directive
+	@description This is used to initialise the header for the page.
+ */
+angular.module('cryptoTrackerHeaderApp', []).controller('HeaderCtrl', function MainCtrl() {
+  this.header = {
+	name: 'Crypto Tracker',
+	description: 'Crypto Decrypted'
+  };
+});
