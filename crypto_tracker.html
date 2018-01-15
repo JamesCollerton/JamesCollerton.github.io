@@ -13,7 +13,6 @@
 
 	<!-- Linked stylesheets -->
 	<link rel="stylesheet" href="CSS/normalize.css"/>
-	<link rel="stylesheet" href="CSS/bootstrap.css"/>
 	<link rel="stylesheet" href="CSS/CSS_2/index.css"/>
 	<link rel="stylesheet" href="CSS/CSS_2/common.css"/>
 
@@ -39,15 +38,15 @@
       <script src="js/respond.js"></script>
     <![endif]-->
 
-    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="James Collerton Website" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Crypto Tracker" />
 
-	<meta prefix="og: http://ogp.me/ns#" property="og:description" content="My personal website made
-	to display some of the projects I've previously worked on." />
+	<meta prefix="og: http://ogp.me/ns#" property="og:description" content="My personal dashboard
+	for tracking my cryptocurrency investments" />
 
 	<meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://s9.postimg.org/3lzp8qz5r/website_OG.png" />
 	<meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://jamescollerton.github.io/" />
 
-	<title>Home.</title>
+	<title>Crypto Tracker.</title>
 
 </head>
 
@@ -63,11 +62,16 @@
 	<!-- Vertical center centers the text in the vertical center of page. -->
 	<div class = "container verticalCenter">
 
+		<!-- Links to Angular for App -->
+		<div ng-app="cryptoTrackerApp">
+
+		</div>
+
 		<!-- Centered form centers the text in the middle of the page. -->
 		<div class = "row centered-form center-block">
 
 			<!-- Header -->
-			<h1 class="indexPageMainHeader">James Collerton</h1>
+			<h1 class="indexPageMainHeader">Crypto Tracker</h1>
 
 		</div> <!-- End of row. -->
 
@@ -78,10 +82,20 @@
 	<!-- ////////////// END OF MAIN PAGE DEFINITION  //////////////////////// -->
 	<!-- //////////////////////////////////////////////////////////////////// -->
 
-	<!-- JQuery and JS scripts.
-		 Note: JQuery may not run on SAFE because of needing to access that library. -->
+	<!-- JQuery and JS scripts -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- Angular scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+	<!-- Custom JS -->
+
+	<!-- Controllers -->
+
+	<!-- Modules -->
+	<script src="CryptoTracker/app/cryptoTracker/js/modules/cryptoTracker.core.js"></script>
+
+	<!-- Services -->
 
 </body>
 
