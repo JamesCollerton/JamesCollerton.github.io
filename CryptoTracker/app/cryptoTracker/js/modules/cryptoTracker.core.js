@@ -28,8 +28,5 @@ angular.module('cryptoTrackerHeaderApp', []).controller('HeaderCtrl', function M
 	@description This is used to initialise the table for the app.
  */
 angular.module('cryptoTrackerTableApp', []).controller('TableCtrl', function MainCtrl() {
-  this.header = {
-	name: 'Crypto Tracker',
-	description: 'Crypto Decrypted'
-  };
+
 });
