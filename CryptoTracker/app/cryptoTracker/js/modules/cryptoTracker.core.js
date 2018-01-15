@@ -10,7 +10,7 @@
 	@description This is an overarching module for all of the contained modules in
 	the app.
  */
-angular.module('cryptoTrackerApp', [])
+angular.module('cryptoTrackerApp', ['cryptoTrackerHeaderApp'])
 
 /*
 	@ngdoc directive

@@ -65,6 +65,12 @@
 		<!-- Links to Angular for App -->
 		<div ng-app="cryptoTrackerApp">
 
+			<!-- Links to Angular for Header -->
+			<div ng-controller="HeaderCtrl as headerCtrl">
+				<header-detail header="headerCtrl.header">
+				</header-detail>
+			</div>
+
 		</div>
 
 		<!-- Centered form centers the text in the middle of the page. -->
@@ -91,9 +97,11 @@
 	<!-- Custom JS -->
 
 	<!-- Controllers -->
+	<script src="CryptoTracker/app/cryptoTracker/js/controllers/cryptoTracker.header.js"></script>
 
 	<!-- Modules -->
 	<script src="CryptoTracker/app/cryptoTracker/js/modules/cryptoTracker.core.js"></script>
+	<script src="CryptoTracker/app/cryptoTracker/js/modules/cryptoTracker.header.js"></script>
 
 	<!-- Services -->
 
