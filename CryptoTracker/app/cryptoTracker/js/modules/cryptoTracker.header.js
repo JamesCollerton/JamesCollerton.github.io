@@ -9,7 +9,7 @@
 	@description This is used to initialise the header for the page.
  */
 angular.module('cryptoTrackerHeaderApp').component('headerDetail', {
-  templateUrl: 'app/cryptoTracker/html/cryptoTracker.header.html',
+  templateUrl: 'CryptoTracker/app/cryptoTracker/html/cryptoTracker.header.html',
   controller: HeaderDetailController,
   bindings: {
     header: '='
