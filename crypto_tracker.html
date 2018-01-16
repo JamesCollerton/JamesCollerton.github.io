@@ -72,17 +72,16 @@
 				</header-detail>
 			</div>
 
-			<!-- Links to Angular for Panel -->
-			<div ng-controller="TableCtrl as tableCtrl">
-				<table-detail header="tableCtrl.header">
+			<div ng-controller="PanelCtrl as panelCtrl">
+				<panel-detail header="panelCtrl.header">
 
-			<!-- Links to Angular for Table Panel -->
-			<div ng-controller="TableCtrl as tableCtrl">
-				<table-detail header="tableCtrl.header">
-				</table-detail>
-			</div>
+				<!-- Links to Angular for Table Panel -->
+				<div ng-controller="TableCtrl as tableCtrl">
+					<table-detail header="tableCtrl.header">
+					</table-detail>
+				</div>
 
-				</table-detail>
+				</panel-detail>
 			</div>
 
 		</div>
