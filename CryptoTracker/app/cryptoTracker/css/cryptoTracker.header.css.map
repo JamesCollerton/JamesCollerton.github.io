@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,gFAAgF;AAEhF,yCAAyC;AAEzC,gFAAgF;AAEhF,gFAAgF;AAChF,eAAe;AAEf,uBAAuB;AAGvB,gFAAgF;AAChF,aAAa;AAEb,mDAAmD;AACnD,kBACA;EACC,MAAM,EAAE,IAAI",
+"mappings": "AAAA,gFAAgF;AAEhF,yCAAyC;AAEzC,gFAAgF;AAEhF,gFAAgF;AAChF,eAAe;AAEf,uBAAuB;AAGvB,gFAAgF;AAChF,aAAa;AAEb,mDAAmD;AACnD,kBACA;EACC,UAAU,EAAE,QAAQ",
 "sources": ["../sass/cryptoTracker.header.scss"],
 "names": [],
 "file": "cryptoTracker.header.css"
