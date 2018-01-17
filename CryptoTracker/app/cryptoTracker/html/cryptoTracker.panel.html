@@ -3,6 +3,6 @@
 <div class="panel panel-default">
 	<div class="panel-heading">{{$ctrl.panel.title}}</div>
   	<div class="panel-body">
-  		<div ng-include src="'CryptoTracker/app/cryptoTracker/html/cryptoTracker.table.html'"></div>
+  		<div ng-include src="{{$ctrl.panel.contents}}"></div>
   	</div>
 </div>
