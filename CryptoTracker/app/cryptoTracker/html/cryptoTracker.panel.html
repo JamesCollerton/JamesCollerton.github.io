@@ -3,9 +3,6 @@
 <div class="panel panel-default">
 	<div class="panel-heading">{{$ctrl.panel.title}}</div>
   	<div class="panel-body">
-  		<div ng-controller={{$ctrl.panel.contents}}>
-			<table-detail header="tableCtrl.header">
-			</table-detail>
-		</div>
+  		<ng-include src="cryptoTracker.table.html"></ng-include>
   	</div>
 </div>
