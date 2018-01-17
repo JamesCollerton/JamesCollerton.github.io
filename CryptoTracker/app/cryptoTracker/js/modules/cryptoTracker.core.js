@@ -10,8 +10,8 @@
 	@description This is an overarching module for all of the contained modules in
 	the app.
  */
-angular.module('cryptoTrackerApp', ['cryptoTrackerHeaderApp', 
-									'cryptoTrackerTableApp', 
+angular.module('cryptoTrackerApp', ['cryptoTrackerHeaderApp',
+									'cryptoTrackerTableApp',
 									'cryptoTrackerPanelApp'])
 
 /*
@@ -30,7 +30,10 @@ angular.module('cryptoTrackerHeaderApp', []).controller('HeaderCtrl', function M
 	@description This is used to initialise the table for the app.
  */
 angular.module('cryptoTrackerPanelApp', []).controller('PanelCtrl', function MainCtrl() {
-
+  this.panel = {
+	title: 'Crypto Tracker',
+	body: 'Crypto Decrypted'
+  };
 });
 
 /*

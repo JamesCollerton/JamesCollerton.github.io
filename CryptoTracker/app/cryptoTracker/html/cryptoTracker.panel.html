@@ -1,13 +1,13 @@
 <!-- HTML Template for Panel  -->
 
 <div class="panel panel-default">
-	<div class="panel-heading">Panel Heading</div>
-		
+	<div class="panel-heading">{{$ctrl.panel.title}}</div>
+
 		<!-- Links to Angular for Table Panel -->
 		<div ng-controller="TableCtrl as tableCtrl">
 			<table-detail header="tableCtrl.header">
 			</table-detail>
 		</div>
 
-  	<div class="panel-body">Panel Content</div>
+  	<div class="panel-body">{{$ctrl.panel.body}}</div>
 </div>
