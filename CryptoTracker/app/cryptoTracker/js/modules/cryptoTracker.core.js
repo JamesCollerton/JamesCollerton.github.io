@@ -32,10 +32,7 @@ angular.module('cryptoTrackerHeaderApp', []).controller('HeaderCtrl', function M
 angular.module('cryptoTrackerPanelApp', []).controller('PanelCtrl', function MainCtrl() {
   this.panel = {
 	title: 'Crypto Tracker',
-	contents: 	'<div ng-controller="TableCtrl as tableCtrl"> ' +
-				'	<table-detail header="tableCtrl.header"> ' +
-				'	</table-detail> ' +
-				'</div> '
+	contents: 'TableCtrl as tableCtrl'
   };
 });
 

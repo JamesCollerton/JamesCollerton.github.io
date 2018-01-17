@@ -2,10 +2,10 @@
 
 <div class="panel panel-default">
 	<div class="panel-heading">{{$ctrl.panel.title}}</div>
-  	<div class="panel-body">{{$ctrl.panel.contents}}</div>
-</div>
-
-<div ng-controller="TableCtrl as tableCtrl">
-	<table-detail header="tableCtrl.header">
-	</table-detail>
+  	<div class="panel-body">
+  		<div ng-controller="{{ctrl.panel.contents}}">
+			<table-detail header="tableCtrl.header">
+			</table-detail>
+		</div>
+  	</div>
 </div>
