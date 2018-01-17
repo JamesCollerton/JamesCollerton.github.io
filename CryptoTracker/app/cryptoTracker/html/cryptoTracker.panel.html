@@ -3,7 +3,7 @@
 <div class="panel panel-default">
 	<div class="panel-heading">{{$ctrl.panel.title}}</div>
   	<div class="panel-body">
-  		<div ng-controller="{{ctrl.panel.contents}}">
+  		<div ng-controller={{ctrl.panel.contents}}>
 			<table-detail header="tableCtrl.header">
 			</table-detail>
 		</div>
