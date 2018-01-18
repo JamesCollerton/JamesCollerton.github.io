@@ -30,7 +30,7 @@ angular.module('cryptoTrackerHeaderApp', []).controller('HeaderCtrl', function M
  */
 angular.module('cryptoTrackerTableApp', []).controller('TableCtrl', function MainCtrl() {
   this.panel = {
-	title: 'Crypto Tracker',
+	title: 'Currency Table',
 	contents: 'CryptoTracker/app/cryptoTracker/html/cryptoTracker.table.html'
   };
   this.table = {};
