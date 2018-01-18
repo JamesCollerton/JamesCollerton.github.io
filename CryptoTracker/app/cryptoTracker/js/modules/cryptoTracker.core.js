@@ -29,8 +29,8 @@ angular.module('cryptoTrackerHeaderApp', []).controller('HeaderCtrl', function M
 	@ngdoc directive
 	@description This is used to initialise the table for the app.
  */
-angular.module('cryptoTrackerPanelApp', []).controller('PanelCtrl', function MainCtrl() {
-  this.panel = {
+angular.module('cryptoTrackerTableApp', []).controller('TableCtrl', function MainCtrl() {
+  this.table = {
 	title: 'Crypto Tracker',
 	contents: 'CryptoTracker/app/cryptoTracker/html/cryptoTracker.table.html'
   };
@@ -40,6 +40,6 @@ angular.module('cryptoTrackerPanelApp', []).controller('PanelCtrl', function Mai
 	@ngdoc directive
 	@description This is used to initialise the table for the app.
  */
-angular.module('cryptoTrackerTableApp', []).controller('TableCtrl', function MainCtrl() {
+// angular.module('cryptoTrackerTableApp', []).controller('TableCtrl', function MainCtrl() {
 
-});
+// });

@@ -3,6 +3,6 @@
  * @description This holds the controller for the page header.
  * 
  */
-function TableDetailController() {
+// function TableDetailController() {
 
-}
+// }
