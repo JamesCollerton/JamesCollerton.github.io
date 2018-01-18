@@ -35,11 +35,3 @@ angular.module('cryptoTrackerTableApp', []).controller('TableCtrl', function Mai
   };
   this.table = {};
 });
-
-/*
-	@ngdoc directive
-	@description This is used to initialise the table for the app.
- */
-// angular.module('cryptoTrackerTableApp', []).controller('TableCtrl', function MainCtrl() {
-
-// });
