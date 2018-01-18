@@ -12,6 +12,6 @@ angular.module('cryptoTrackerTableApp').component('tableDetail', {
   templateUrl: 'CryptoTracker/app/cryptoTracker/html/cryptoTracker.panel.html',
   controller: TableDetailController,
   bindings: {
-	 panel: '='
+	 table: '='
   }
 });
