@@ -11,8 +11,7 @@
 	the app.
  */
 angular.module('cryptoTrackerApp', ['cryptoTrackerHeaderApp',
-									'cryptoTrackerTableApp',
-									'cryptoTrackerPanelApp'])
+									'cryptoTrackerTableApp'])
 
 /*
 	@ngdoc directive
