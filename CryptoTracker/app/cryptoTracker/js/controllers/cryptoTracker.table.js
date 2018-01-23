@@ -12,7 +12,14 @@
 
 function Table() {
 
-	function createTable() {
+	function createTable(Sscope, $http) {
+
+		$http.get("https://api.cryptonator.com/api/ticker/btc-usd").then(function(response) {
+
+			alert(response);
+
+		});
+
 		alert("Creating Table")
 	}
 
@@ -24,6 +31,6 @@ function Table() {
 function TableDetailController($scope, $http) {
 
 	var table = Table()
-	table.createTable();
+	table.createTable($scope, $http);
 
 }
