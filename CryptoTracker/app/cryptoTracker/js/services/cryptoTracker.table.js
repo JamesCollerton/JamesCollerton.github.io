@@ -1,6 +1,6 @@
 function TableService() {
 
-	function getTableData(Sscope, $http) {
+	function getTableData($http) {
 
 		$http.get("https://api.cryptonator.com/api/ticker/btc-usd").then(function(response) {
 

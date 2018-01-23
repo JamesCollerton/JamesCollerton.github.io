@@ -15,7 +15,7 @@ function Table() {
 	function createTable(Sscope, $http) {
 
 		var tableService = TableService();
-		tableService.getTableData($scope, $http);
+		tableService.getTableData($http);
 
 	}
 
