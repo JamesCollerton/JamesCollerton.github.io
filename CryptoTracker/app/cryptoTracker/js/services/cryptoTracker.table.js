@@ -12,6 +12,6 @@ function TableService() {
 	}
 
 	return {
-		"createTable": createTable
+		"getTableData": getTableData
 	}
 }
