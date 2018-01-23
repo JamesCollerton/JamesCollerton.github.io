@@ -16,11 +16,11 @@ function Table() {
 
 		$http.get("https://api.cryptonator.com/api/ticker/btc-usd").then(function(response) {
 
-			alert(response);
+			alert(response)
+			console.log(response)
 
 		});
 
-		alert("Creating Table")
 	}
 
 	return {
