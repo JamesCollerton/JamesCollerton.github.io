@@ -14,8 +14,14 @@ function Table() {
 
 	function createTable(Sscope, $http) {
 
+		$scope.rows = []
+
+		function addRow(row) {
+			$scope.rows.append(row)
+		}
+
 		var tableService = TableService();
-		tableService.getTableData($http);
+		tableService.getTableData($http, addRow);
 
 	}
 
