@@ -40,7 +40,7 @@ angular.module('cryptoTrackerTableApp', []).controller('TableCtrl', function Mai
   			value: 10,
   			purchasePrice: 5,
   			gainAbsolute: 5,
-  			gainPercentage: 100
+  			gainPercentage: 100,
   			twentyFourHourVolatility: 100
   		}
   	]
