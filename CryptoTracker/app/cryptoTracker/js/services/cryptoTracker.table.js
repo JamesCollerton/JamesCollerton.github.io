@@ -16,7 +16,7 @@ function TableService() {
 				"purchasePrice" : 1,
 				"gainAbsolute" : data.price - purchasePrice,
 				"gainPercentage" : data.price / purchasePrice,
-				"twentyFourHourVolatility" : (data.price + data.change) / data.price * 100
+				"twentyFourHourVolatility" : (data.price + data.change) / data.price
 			}
 
 			addRow(row)
