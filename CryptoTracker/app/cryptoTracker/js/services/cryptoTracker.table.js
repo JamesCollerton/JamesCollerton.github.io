@@ -18,6 +18,8 @@ function TableService() {
 				"twentyFourHourVolatility" : data.price / data.change
 			}
 
+			console.log("Here")
+
 		});
 
 	}
