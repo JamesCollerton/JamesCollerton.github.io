@@ -17,7 +17,7 @@ function Table() {
 		$scope.rows = []
 
 		function addRow(row) {
-			$scope.rows.append(row)
+			$scope.rows.push(row)
 			console.log(row)
 		}
 
