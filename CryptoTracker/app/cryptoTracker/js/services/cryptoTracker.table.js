@@ -12,10 +12,11 @@ function TableService() {
 
 			var row = {
 				"currency" : data.base,
+				"value" : data.price,
 				"purchasePrice" : 1,
 				"gainAbsolute" : data.price - purchasePrice,
 				"gainPercentage" : data.price / purchasePrice,
-				"twentyFourHourVolatility" : data.change / data.price * 100
+				"twentyFourHourVolatility" : (data.price + data.change) / data.price * 100
 			}
 
 			addRow(row)
