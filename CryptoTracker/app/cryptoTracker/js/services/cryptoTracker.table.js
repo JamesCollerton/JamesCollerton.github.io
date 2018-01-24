@@ -1,6 +1,6 @@
 function TableService() {
 
-	function getTableData($http) {
+	function getTableData($http, addRow) {
 
 		$http.get("https://api.cryptonator.com/api/ticker/btc-usd").then(function(response) {
 
@@ -18,7 +18,7 @@ function TableService() {
 				"twentyFourHourVolatility" : data.price / data.change
 			}
 
-			console.log("Here")
+			addRow(row)
 
 		});
 

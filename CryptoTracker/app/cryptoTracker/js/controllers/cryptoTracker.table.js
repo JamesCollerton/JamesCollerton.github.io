@@ -18,6 +18,7 @@ function Table() {
 
 		function addRow(row) {
 			$scope.rows.append(row)
+			console.log(row)
 		}
 
 		var tableService = TableService();
