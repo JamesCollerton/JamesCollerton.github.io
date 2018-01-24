@@ -7,6 +7,16 @@ function TableService() {
 			alert("In Service")
 			console.log(response)
 
+			var data = response.data.ticker
+
+			var row = {
+				"currency" : data.base,
+				"purchasePrice" : 1,
+				"gainAbsolute" : data.price - purchasePrice,
+				"gainPercentage" : data.price / purchasePrice,
+				"twentyFourHourVolatility" : data.price / change
+			}
+
 		});
 
 	}
