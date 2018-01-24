@@ -33,5 +33,16 @@ angular.module('cryptoTrackerTableApp', []).controller('TableCtrl', function Mai
 	title: 'Currency Table',
 	contents: 'CryptoTracker/app/cryptoTracker/html/cryptoTracker.table.html'
   };
-  this.table = {};
+  this.table = {
+  	rows: [
+  		{
+  			currency: "BTC",
+  			value: 10,
+  			purchasePrice: 5,
+  			gainAbsolute: 5,
+  			gainPercentage: 100
+  			twentyFourHourVolatility: 100
+  		}
+  	]
+  };
 });

@@ -12,13 +12,13 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">BTC</th>
-      <td>10</td>
-      <td>5</td>
-      <td>5</td>
-      <td>100%</td>
-      <td>100%</td>
+    <tr ng-repeat="i in rows">
+      <th scope="row">{{i.currency}}</th>
+      <td>{{i.value}}</td>
+      <td>{{i.purchasePrice}}</td>
+      <td>{{i.gainAbsolute}}</td>
+      <td>{{i.gainPercentage}}%</td>
+      <td>{{i.twentyFourHourVolatility}}%</td>
     </tr>
   </tbody>
 </table>
