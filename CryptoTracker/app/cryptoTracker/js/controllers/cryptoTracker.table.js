@@ -12,7 +12,7 @@
 
 function Table() {
 
-	function createTable(Sscope, $http) {
+	function createTable($scope, $http) {
 
 		$scope.rows = []
 
