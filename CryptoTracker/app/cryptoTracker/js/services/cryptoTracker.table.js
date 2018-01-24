@@ -8,13 +8,14 @@ function TableService() {
 			console.log(response)
 
 			var data = response.data.ticker
+			var purchasePrice = 1
 
 			var row = {
 				"currency" : data.base,
 				"purchasePrice" : 1,
 				"gainAbsolute" : data.price - purchasePrice,
 				"gainPercentage" : data.price / purchasePrice,
-				"twentyFourHourVolatility" : data.price / change
+				"twentyFourHourVolatility" : data.price / data.change
 			}
 
 		});
