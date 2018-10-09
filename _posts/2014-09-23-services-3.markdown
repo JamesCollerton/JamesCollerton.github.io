@@ -8,6 +8,4 @@ description: |
 In my spare time I developed the FlashApp android application, an application
 that uses guide number mathematics to ascertain exposure levels for film photography.
 
-Aside from that I have taught programming at my local library, participated
-in the Advent of Code programming challenge and began developing my own services ecosystem to
-gain experience of microservices.
+I have taught programming at my local library, participated in the Advent of Code and began developing my own services ecosystem to gain experience of microservices.
