@@ -1,7 +1,7 @@
 ---
 layout: default
 img: ipad.png
-category: Previous Experience
+category: Services
 title: Previous Experience 
 description: |
 ---
