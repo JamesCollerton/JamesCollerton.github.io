@@ -5,11 +5,11 @@ category: Services
 title: Previous Experience 
 description: |
 ---
-Recently I've been working at Kobalt Music Group programming as a developer helping run technical
+Recently I've been working at Kobalt Music Group programming as an engineer helping run technical
 projects and develop the Neighbouring Rights department.
 
 Previously I've worked as a consultant to Unilever, Glaxosmithkline and Oxford University assisting
 them leverage technology and data to further their businesses.
 
-However, my technology career began as an intern at university where I worked with a company SPARX,
+However, my technology career began as an intern where I worked with a company SPARX,
 aiding them in building systems for teaching KS2 children mathematics.

@@ -6,8 +6,8 @@ title: Achievements and Responsibilities
 description: |
 ---
 In my spare time I developed the FlashApp android application, an application
-that uses Guide Number mathematics to ascertain exposure levels for film photography.
+that uses guide number mathematics to ascertain exposure levels for film photography.
 
-Aside from that I have taught programming on a voluntary basis at my local library, participated
+Aside from that I have taught programming at my local library, participated
 in the Advent of Code programming challenge and began developing my own services ecosystem to
 gain experience of microservices.

@@ -5,9 +5,9 @@ category: Services
 title: Education 
 description: |
 ---
-I recieved a first in mathematics from the University of Bristol with my bachelor's project on nonparametric 
+I recieved a First in Mathematics from the University of Bristol with my bachelor's project on nonparametric 
 regression, wavelets and their applications helping me win a research grant offer from the EPSRC.
 
 I then pursued a Master's in Computer Science where I achieved a distinction, graduating top of my cohort in 
-my taught modules. My thesis focussed on using machine learning algorithms to derive differential equation 
+the taught modules. My thesis focussed on using machine learning algorithms to derive differential equation 
 models of ant emigration behaviour.
