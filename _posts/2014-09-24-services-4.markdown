@@ -2,7 +2,7 @@
 layout: default
 img: ipad.png
 category: Services
-title: Education
+title: Technologies
 description: |
 ---
- Education description 
+Technologies description.
