@@ -5,4 +5,11 @@ category: Services
 title: Education 
 description: |
 ---
-Education description.
+I studied an undergraduate degree at the University of Bristol achieving a first in mathematics. 
+As part of this I was offered an EPSRC research grant to investigate reducing noise in images,
+a result of my bachelor's project on nonparametric regression, wavelets and their applications.
+
+After teaching myself some programming in second year I pursued a Master's in Computer Science where
+I achieved a distinction graduating top of my cohort in my taught modules. My thesis focussed on
+using machine learning algorithms to derive differential equation models of ant emigration behaviour
+and I resided as part of the computational ant lab research group.

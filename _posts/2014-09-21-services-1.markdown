@@ -5,4 +5,13 @@ category: Services
 title: Previous Experience 
 description: |
 ---
-Currently working at Kobalt Music Services as a Software Engineer with experience in Java, SQL, Git and the Atlassian stack. Previously a Business Intelligence and Analytics consultant at Thorogood Associates working in .NET. Intern at SPARX - Illuminating Learning working on data analytics using Python and R.
+I've spent the last two and a half years working at Kobalt Music Group, where I've been helping
+build the Neighbouring Rights technology team. As part of this I've been building systems handling
+millions of records of data, running technical projects and helping develop more junior members
+of my company.
+
+Previously I've worked as a consultant to Unilever, Glaxosmithkline and Oxford University helping
+them leverage technology and data to further their businesses.
+
+However, my technology career began as an intern at university where I worked with a company SPARX,
+helping them develop systems for teaching KS2 children mathematics.
