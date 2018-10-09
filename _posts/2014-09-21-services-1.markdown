@@ -5,13 +5,12 @@ category: Services
 title: Previous Experience 
 description: |
 ---
-I've spent the last two and a half years working at Kobalt Music Group, where I've been helping
-build the Neighbouring Rights technology team. As part of this I've been building systems handling
+I've spent the last two and a half years working at Kobalt Music Group building systems handling
 millions of records of data, running technical projects and helping develop more junior members
-of my company.
+of the company.
 
-Previously I've worked as a consultant to Unilever, Glaxosmithkline and Oxford University helping
+Previously I've worked as a consultant to Unilever, Glaxosmithkline and Oxford University assisting
 them leverage technology and data to further their businesses.
 
 However, my technology career began as an intern at university where I worked with a company SPARX,
-helping them develop systems for teaching KS2 children mathematics.
+aiding them in building systems for teaching KS2 children mathematics.
