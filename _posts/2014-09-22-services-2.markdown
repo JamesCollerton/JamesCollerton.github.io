@@ -1,8 +1,8 @@
 ---
 layout: default
-img: dog.png
+img: education.jpg
 category: Services
-title: education.jpg
+title: Education
 description: |
 ---
 I recieved a First in Mathematics from the University of Bristol with my bachelor's project on nonparametric 
