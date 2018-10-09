@@ -5,4 +5,10 @@ category: Services
 title: Technologies
 description: |
 ---
-Technologies description.
+I am always keen to learn new technologies. My favourite programming language is Java
+but recently I have been investigating Scala. 
+
+Lately I have been developing my own set of services, which can be found on my GitHub.
+This has been an opportunity to use Spring Boot, the Netflix stack, Terraform and AWS. 
+Although I am absolutely not an expert in the services department I am enjoying learning 
+about the area and hope to be able to employ my learning professionally soon.

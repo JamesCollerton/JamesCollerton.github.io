@@ -5,11 +5,9 @@ category: Services
 title: Achievements and Responsibilities
 description: |
 ---
-Outside of my professional life and studies I have maintained a healthy interest in technology
-and mathematics. In my spare time I developed the FlashApp android application, an application
+In my spare time I developed the FlashApp android application, an application
 that uses Guide Number mathematics to ascertain exposure levels for film photography.
 
 Aside from that I have taught programming on a voluntary basis at my local library, participated
 in the Advent of Code programming challenge and began developing my own services ecosystem to
-gain experience of microservices. There are a whole range of other projects I have worked on as 
-well, make sure to check out my GitHub to find them!
+gain experience of microservices.

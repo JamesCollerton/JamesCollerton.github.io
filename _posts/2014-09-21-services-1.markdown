@@ -5,9 +5,8 @@ category: Services
 title: Previous Experience 
 description: |
 ---
-I've spent the last two and a half years working at Kobalt Music Group building systems handling
-millions of records of data, running technical projects and helping develop more junior members
-of the company.
+Recently I've been working at Kobalt Music Group programming as a developer helping run technical
+projects and develop the Neighbouring Rights department.
 
 Previously I've worked as a consultant to Unilever, Glaxosmithkline and Oxford University assisting
 them leverage technology and data to further their businesses.
