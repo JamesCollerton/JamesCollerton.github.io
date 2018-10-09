@@ -1,6 +1,6 @@
 ---
 layout: default
-img: phones.png
+img: achievement-and-responsibilities.jpg
 category: Services
 title: Achievements and Responsibilities
 description: |
