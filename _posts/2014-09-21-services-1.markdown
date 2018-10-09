@@ -5,4 +5,4 @@ category: Services
 title: Previous Experience 
 description: |
 ---
- Previous experience description 
+Currently working at Kobalt Music Services as a Software Engineer with experience in Java, SQL, Git and the Atlassian stack. Previously a Business Intelligence and Analytics consultant at Thorogood Associates working in .NET. Intern at SPARX - Illuminating Learning working on data analytics using Python and R.
