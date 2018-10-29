@@ -5,7 +5,7 @@ category: Services
 title: Achievements and Responsibilities
 description: |
 ---
-In my spare time I developed the FlashApp android application, an application
+In my spare time I developed the <a href="https://play.google.com/store/apps/details?id=com.flashapp.jamescollerton.flashapp">FlashApp android application</a>, an application
 that uses guide number mathematics to ascertain exposure levels for film photography.
 
 I have taught programming at my local library, participated in the Advent of Code and began developing my own services ecosystem to gain experience of microservices.
