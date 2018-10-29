@@ -5,7 +5,7 @@ category: Services
 title: Previous Experience 
 description: |
 ---
-Recently I've been working at Kobalt Music Group as an engineer helping run technical
+Recently I've been working at <a href="https://www.kobaltmusic.com/">Kobalt Music Group</a> as an engineer helping run technical
 projects and develop the Neighbouring Rights department.
 
 Previously I've worked as a consultant to Unilever, Glaxosmithkline and Oxford University assisting
