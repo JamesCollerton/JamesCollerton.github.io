@@ -6,7 +6,7 @@ title: Previous Experience
 description: |
 ---
 
-Most recently I've been working as a Senior Software Engineer at the <a href="https://www.bbc.co.uk/">BBC</a>.
+Most recently I've been working as a Senior Software Engineer at The <a href="https://www.bbc.co.uk/">BBC</a>.
 
 Previously I've worked at <a href="https://www.kobaltmusic.com/">Kobalt Music Group</a> as 
 an engineer where I helped run technical projects. Prior to that I was a programming and 
