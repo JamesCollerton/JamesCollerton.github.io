@@ -10,7 +10,7 @@ Jekyll is required, instructions for download are best found [here](https://stac
 
 ### Making Changes
 
-Make changes to the necessary files and then build using
+Make changes to the necessary files and then build using `jekyll serve`.
 
 ## Credits
 Jekyll theme based on [landing-page bootstrap theme ](http://startbootstrap.com/templates/landing-page/)
