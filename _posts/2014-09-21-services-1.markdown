@@ -5,8 +5,9 @@ category: Services
 title: Previous Experience 
 description: |
 ---
-Recently I've been working at <a href="https://www.kobaltmusic.com/">Kobalt Music Group</a> as an engineer helping run technical
-projects and develop the Neighbouring Rights department.
 
-Previously I've worked as a consultant to Unilever, Glaxosmithkline and Oxford University assisting
-them leverage technology and data to further their businesses.
+Most recently I've been working as Senior Software Engineer at the <a href="https://www.bbc.co.uk/">BBC</a>.
+
+Previously I've worked at <a href="https://www.kobaltmusic.com/">Kobalt Music Group</a> as 
+an engineer where I helped run technical projects. Prior to that I was a programming and 
+data consultant to Unilever, Glaxosmithkline and Oxford University.
